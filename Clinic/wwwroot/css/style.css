@@ -1,0 +1,154 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    margin: 1px;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: ivory;
+}
+
+background-image {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 1122px;
+    height: 408px;
+}
+
+
+canvas {
+    box-shadow: -3px 1px 5px 4px red;
+    cursor: pointer;
+    /*    background: green;*/
+    /*  background-attachment: fixed;*/
+    background-color: transparent;
+    /* background-image: url("/Images/MSK1_866_600.jpg");*/
+    /*background: url("/Images/Musculoskeletal1.jpg");*/
+    /*background-image: url("/Images/istockphoto-1160619280-612x612.jpg");*/
+    /*background-image: url("/Images/30MSK1.jpg");*/
+    background-image: url("/Images/30MSK1.jpg");
+    /*background-image: url("/Images/MSK1_Web_Large.jpg");*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: 1000px 700px;
+}
+/*canvas1 {
+    box-shadow: -3px 2px 9px 6px red;*/
+    /*    background-image: url(/Images/30MSK1.jpg);*/
+    /*z-index: 0;
+}*/
+
+.tools {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top:15px;
+}
+
+.tools .color-field {
+    height: 40px;
+    width: 40px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid white;
+    align-self: center;
+    margin-left: 0-15px;
+}
+
+.tools .button {
+    align-self: center;
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    background: #222;
+    font-weight: bold;
+    margin-left: 0-15px;
+}
+
+.color-picker {
+    align-self: center;
+    margin: 0-15px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.pen-range {
+    align-self: center;
+    margin: 0 10px;
+    margin-left: 0-15px;
+}
+
+/*
+#canvas1{
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#canvas2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    opacity: 1;
+}*/
+
+
+/*
+.outsideWrapper {
+    position: absolute;
+    width: 200px;
+    height: 125px;
+    margin: 20px 60px;
+    border: 1px solid blue;
+}
+
+.insideWrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.coveredImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.coveringCanvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 0, 0, .1);
+}*/
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

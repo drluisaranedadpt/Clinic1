@@ -1,0 +1,619 @@
+﻿@model List<Patient>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<partial name="_Law" />
+<partial name="_PortalPartial" />
+<div align="right" class="pagination">
+    <a href="/Home/Lien"> ❮ Previous</a>
+    &nbsp;&nbsp;
+    <a href="/Home/History"> Next ❯</a>
+</div>
+<h5 align="right">Intake Form</h5>
+
+<hr />
+@*Connect MySQL Database to .Net Core 5 Application*OPENEDUCATION@
+@*https://www.youtube.com/watch?v=KRnW3CedU58*@
+<table class="d-table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>FistName</th>
+            <th>LastName</th>
+            <th>Age</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th>@item.Id</th>
+                <th>@item.FirstName</th>
+                <th>@item.LastName</th>
+                <th>@item.MiddleInitial</th>
+                <th>@item.Age</th>
+                <th>@item.DOB</th>
+                <th>@item.CDL</th>
+                <th>@item.Email</th>
+                <th>@item.SSN</th>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Personal Information</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="2%" class="border3"> <div align="right">1.</div></td>
+        <td width="15%" class="border3" question_name="one"><div align="left"></div></td>
+
+        <td width="3%" class="border2"><div align="right">Patient ID</div></td>
+        <td width="7%" class="border2"><input id="lastName" placeholder="" size="5" name="Last Name" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="3%" class="border2"><div align="right">Last&nbsp;Name</div></td>
+        <td width="7%" class="border2"><input id="lastName" placeholder="" size="10" name="Last Name" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="4%" class="border2"><div align="right">First&nbsp;Name</div></td>
+        <td width="7%" class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="7%" class="border2"><div align="right">M.I.</div></td>
+        <td width="7%" class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="7%" class="border2"><div align="right">CDL</div></td>
+        <td width="7%" class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Other ID</div></td>
+        <td width="5%" class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="10%" class="border2"><div align="right">DOB</div></td>
+        <td width="10%" class="border2"><input id="lastName" placeholder="" size="9" name="one" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="1%" class="border2"></td>
+        <td width="10%" class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">2.</div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><div align="right"></div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Street</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Apt</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">City</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">State</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Zip Code</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Email</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">3.</div></td>
+        <td class="border3" question_name="one"><div align="left">Gender/Marital</div></td>
+
+        <td class="border2" align="right">Unstated</td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Male</td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Female </td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Single</td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Married</td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Separated</td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Widowed</td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">4.</div></td>
+        <td class="border3" question_name="one"><div align="left">Work/Student</div></td>
+
+        <td class="border2" align="right">Unstated</td>
+        <td class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Employed</td>
+        <td class="border2" align="left"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Unemployed</td>
+        <td class="border2" align="left"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Part-Time</td>
+        <td class="border2" align="left"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Full-Time</td>
+        <td class="border2" align="left"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Disabled</td>
+        <td class="border2" align="left"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2" align="right">Retired</td>
+        <td class="border2" align="left"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Emergency Contact</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">5.</div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><div align="right">EmergencyID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Last&nbsp;Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">First&nbsp;Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Relationship</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Phone</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Cell</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Email</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">6.</div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><div align="right">EmergencyID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Last&nbsp;Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">First&nbsp;Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Relationship</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Phone</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Cell</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Email</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Physician Information</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">7.</div></td>
+        <td class="border3" question_name="one"><div align="left">Primary</div></td>
+
+        <td class="border2"><div align="right">PhysicianID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Last Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">First Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Specialty</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Phone</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Fax</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Email</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">8.</div></td>
+        <td class="border3" question_name="one"><div align="left">Specialist</div></td>
+
+        <td class="border2"><div align="right">PhysicianID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Last Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">First Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Specialty</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Phone</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Fax</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Email</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">9.</div></td>
+        <td class="border3" question_name="one"><div align="left">Nurse P</div></td>
+
+        <td class="border2"><div align="right">NurseID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Last Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">First Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Specialty</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Phone</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Fax</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Email</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">10.</div></td>
+        <td class="border3" question_name="one"><div align="left">PA-C</div></td>
+
+        <td class="border2"><div align="right">PAC ID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Last Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">First Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Specialty</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Phone</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Fax</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Email</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Insurance Information</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">11.</div></td>
+        <td class="border3" question_name="one"><div align="left">Ins. Type</div></td>
+
+        <td class="border2" align="right"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2" align="left">Medicare</td>
+
+        <td class="border2" align="right"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2" align="left">Medicare/Secondary</td>
+
+        <td class="border2" align="right"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2" align="left">CareAdvantage</td>
+
+        <td class="border2" align="right"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2" align="left">HPSM Medi-Cal</td>
+
+        <td class="border2" align="right"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2" align="left">PPO [In-Network]</td>
+
+        <td class="border2" align="right"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2" align="left">Worker''s Comp.</td>
+
+        <td class="border2" align="right"><input name="one" size="10" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2" align="left">Self-Pay/Private</td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">12.</div></td>
+        <td class="border3" question_name="one"><div align="left">Primary</div></td>
+
+        <td class="border2"><div align="right">Insurance ID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Policy #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">ID #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Authorization</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Deductible</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">CoPay</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Holder</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">13.</div></td>
+        <td class="border3" question_name="one"><div align="left">Secondary</div></td>
+
+        <td class="border2"><div align="right">Insurance ID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Policy #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">ID #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Authorization</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Deductible</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">CoPay</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Holder</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">14.</div></td>
+        <td class="border3" question_name="one"><div align="left">Tertiary</div></td>
+
+        <td class="border2"><div align="right">Insurance ID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Policy #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">ID #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Authorization</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Deductible</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">CoPay</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Holder</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">15.</div></td>
+        <td class="border3" question_name="one"><div align="left">Liability</div></td>
+
+        <td class="border2"><div align="right">Insurance ID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Policy #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">ID #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Authorization</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Deductible</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">CoPay</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Holder</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">16. </div></td>
+        <td class="border3" question_name="one"><div align="left">Motor Vehicle</div></td>
+
+        <td class="border2"><div align="right">Insurance ID</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="5" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Policy #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">ID #</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Authorization</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Deductible</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">CoPay</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Holder</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="15" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Personal Payment Information</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">17.</div></td>
+        <td class="border3" question_name="one"><div align="left">Credit Card</div></td>
+
+        <td class="border2"><div align="right"></div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="5" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Last Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">First Name</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Card Number</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Exp Date</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Code</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Card Type</div></td>
+        <td class="border2"><input id="lastName" placeholder="" size="10" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right"></div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                It is patient responsability to understand their insurance policy for covered services.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <strong>Copayment:</strong> A copayment or copay is a fixed amount for a covered service, paid by a patient to the provider of service before
+                receiving the service. It may be defined in an insurance policy and paid by an insured person each time a medical service is accessed.
+                <strong>Deductible:</strong> In an insurance policy, the deductible is the amount paid out of pocket by the policy holder before an insurance provider
+                will pay any expenses.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <strong>No Shows/Late Cancellations:</strong> Patients who schedule clinic appointments and fail to keep them have a negative impact on patient care, productivity, patient education
+                and the organization’s financials. The No Show process is designed to minimize disruptions in the scheduling process and disruptions in
+                delivery of care. The No Show process is ultimately intended to improve both the health and quality of life of our patients by increasing access to care.
+            </p>
+        </td>
+    </tr>
+</table>

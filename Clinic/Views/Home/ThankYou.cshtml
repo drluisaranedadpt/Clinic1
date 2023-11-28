@@ -1,0 +1,485 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<partial name="_Law" />
+<partial name="_PortalPartial" />
+<div align="right" class="pagination">
+    <a href="/Home/Lien"> ❮ Previous</a>
+    &nbsp;&nbsp;
+    <a href="/Home/History"> Next ❯</a>
+</div>
+<h5 align="right">Survey</h5>
+<hr />
+
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Customer Services by Department</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="1%" class="border3"> <div align="right">1.</div></td>
+        <td width="15%" class="border3" question_name="one"><div align="left">Telephone Attendant</div></td>
+
+        <td width="5%" class="border2"><div align="right">The Worst</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Very Poor</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Poor</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Ok</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Good</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Great</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Amazing!</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Comment</div></td>
+        <td width="10%" class="border2"><input id="lastName" placeholder="" size="25" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"></td>
+        <td width="1%" class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">2.</div></td>
+        <td class="border3" question_name="one"><div align="left">Front Desk</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">3.</div></td>
+        <td class="border3" question_name="one"><div align="left">Physical Therapy</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">4.</div></td>
+        <td class="border3" question_name="one"><div align="left">Billing</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+</table>
+<br />
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Customer Services by Employees</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="1%" class="border3"> <div align="right">1.</div></td>
+        <td width="15%" class="border3" question_name="one"><div align="left">Marie Rose M. Reception</div></td>
+
+        <td width="5%" class="border2"><div align="right">The Worst</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Very Poor</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Poor</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Ok</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Good</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Great</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Amazing!</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Comment</div></td>
+        <td width="10%" class="border2"><input id="lastName" placeholder="" size="25" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"></td>
+        <td width="1%" class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">2.</div></td>
+        <td class="border3" question_name="one"><div align="left">Ana Maria Hadi, Billing</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">3.</div></td>
+        <td class="border3" question_name="one"><div align="left">Dr. Luis Araneda, DPT</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">4.</div></td>
+        <td class="border3" question_name="one"><div align="left">Daphne Hortaleza, PT</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">5.</div></td>
+        <td class="border3" question_name="one"><div align="left">Justine Caranbing, PTLA</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">6.</div></td>
+        <td class="border3" question_name="one"><div align="left">Miguel Araneda, Accounting</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+</table>
+<br />
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td bgcolor="white" colspan="32" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Customer Services by Area</h6>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="1%" class="border3"> <div align="right">1.</div></td>
+        <td width="15%" class="border3" question_name="one"><div align="left">Reception</div></td>
+
+        <td width="5%" class="border2"><div align="right">The Worst</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Very Poor</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Poor</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Ok</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Good</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Great</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Amazing!</div></td>
+        <td width="2%" class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"><div align="right">Comment</div></td>
+        <td width="10%" class="border2"><input id="lastName" placeholder="" size="25" name="one" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2"></td>
+        <td width="1%" class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">2.</div></td>
+        <td class="border3" question_name="one"><div align="left">Gym Area</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">3.</div></td>
+        <td class="border3" question_name="one"><div align="left">Rooms</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right">4.</div></td>
+        <td class="border3" question_name="one"><div align="left">Equipment</div></td>
+
+        <td class="border2"><div align="right">The Worst</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Very Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Poor</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Ok</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Good</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Great</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Amazing!</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"><div align="right">Comment</div></td>
+        <td class="border2"><input id="lastName" placeholder="" name="one" size="25" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+</table>

@@ -1,0 +1,262 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<link rel="stylesheet" href="~/CampusLogo.png" />
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="~/sign.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        #myCanvas {
+            border: 1px solid #444;
+            border-radius: 15px;
+            border-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div align="center">
+        <img width="100" height="120" src="~/CampusLogo.png" alt="Campus Physical Therapy">
+    </div>
+    <div class="text-center">
+        <h2> Campus Physical Therapy Center </h2>
+        <h5>Patient Portal </h5>
+        <h6 class="display-4">Signature Page</h6>
+    </div>
+    <hr />
+    <table align="center" width="100%" border="0" cellspacing="0" cellpadding="2">
+        <tr>
+            <td width="2%" class="border3"> <div align="left">1.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Agreement</div></td>
+
+            <td width="1%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="1%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="1%" class="border2"></td>
+
+            <td width="1%" class="border2"></td>
+            <td width="1%" class="border2"></td>
+
+            <td width="1%" class="border2"></td>
+            <td width="1%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">2.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Assignment</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">3.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Cancellation</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">4.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Consent</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">5.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Direct Access</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">6.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Lien</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">7.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Intake</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">7.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">History</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">7.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Past History</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">7.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Radiology</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+        <tr>
+            <td width="2%" class="border3"> <div align="left">7.</div></td>
+            <td width="10%" class="border3" question_name="one"><div align="left">Goals</div></td>
+
+            <td width="2%" class="border2"><input id="lastName" placeholder="" name="Last Name" type="text" size="1" value="" onClick=doScoreTotal1(this);></td>
+            <td width="5%" class="border2">(Initials)&nbsp;&nbsp;</td>
+
+            <td width="60%" class="border2">I have read and understand the Aggrement with Campus Physical Therapy, Inc. </td>
+            <td width="5%" class="border2"></td>
+
+            <td width="5%" class="border2"></td>
+            <td width="5%" class="border2"></td>
+
+            <td width="2%" class="border2"></td>
+            <td width="2%" class="border2"></td>
+
+            <td width="10%" class="border2"></td>
+        </tr>
+    </table>
+    <hr />
+
+    <div align="center">
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <div align="center">
+        <input type="button" class="btn btn-primary" value="Reset" id='resetSign'>
+        <input type="button" class="btn btn-primary" value="Save Document">
+        <input type="button" class="btn btn-success" value="Print Document">
+        <input type="button" class="btn btn-warning" value="Reserved">
+        <input type="button" class="btn btn-info" value="Reserverd">
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#myCanvas').sign({
+                resetButton: $('#resetSign'),
+                lineWidth: 2, // * optional
+                width: 500, // * optional. Default: 500
+                height: 300, // * optional. Default: 300
+            });
+        });
+    </script>
+
+
+</body>
+</html>

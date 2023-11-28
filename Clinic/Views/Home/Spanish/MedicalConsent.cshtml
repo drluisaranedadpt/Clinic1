@@ -1,0 +1,81 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">La siguiente información está protegida por las leyes federales de California y EE. UU.</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 align="right">
+    Consentimiento médico general
+</h5>
+<partial name="_PatientHeaderPartial" />
+<hr />
+<article>
+    <div>
+        <h6>
+            Me han informado sobre el beneficio esperado y los métodos alternativos de
+            tratamiento (s), y entiendo que <strong> puedo rechazar </strong> cualquier procedimiento antes de su realización.
+            Entiendo que la práctica de fisioterapia generalmente requiere el tratamiento
+            terapeuta para tocar físicamente al paciente con el fin de evaluar y / o guiar al paciente el adecuado
+            manera de hacer un ejercicio para acelerar la curación o permitir que el terapeuta sienta cómo
+            el cuerpo está reaccionando a ciertos movimientos, lo que puede educar aún más al tratante
+            terapeuta sobre qué modalidades de terapia deben modificarse para adaptarse al paciente, por lo tanto
+            Doy mi consentimiento para tales interacciones físicas con mi fisioterapeuta tratante.
+            Por la presente doy mi consentimiento a los procedimientos que se pueden realizar mientras sea paciente de
+            Campus Orthopaedics Physical Therapy Inc. bajo las instrucciones de un médico
+            Terapeuta. Esto puede incluir, entre otros: <strong> (1) </strong> examen de fisioterapia,
+            evaluaciones, prueba de rendimiento físico; <strong> (2) </strong> Aplicaciones de modalidades como
+            compresa caliente / fría, estimulación eléctrica, hidromasaje, diatermia, ultravioleta,
+            iontoforesis, fonoforesis, TENS, baño de contraste, ultrasonido, etc. <strong> (3) </strong>
+            Aplicaciones de procedimientos terapéuticos, como ejercicios terapéuticos, neuromuscular.
+            rehabilitación, actividades cinéticas, entrenamiento de la marcha, tracción manual o mecánica,
+            masaje, técnicas de liberación miofascial, movilización de tejidos blandos, movilización articular,
+            Entrenamientos de ADL, fortalecimiento del trabajo, ejercicios grupales, educación grupal, etc.
+        </h6>
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature"
+                        style="border:1px solid black"></canvas><br>
+                <button type="button" id="accept"
+                        class="btn btn-primary">
+                    Accept signature
+                </button>
+                <button type="submit" id="save"
+                        class="btn btn-primary">
+                    Save
+                </button><br>
+            </p>
+        </form>
+        <hr />
+
+    </div>
+    <div class="pagination">
+        <a href="/PaperDocuments/Welcome"> ❮ Previous</a>
+        &nbsp;&nbsp;
+        <a href="/PaperDocuments/PrivacyPractice"> Next ❯</a>
+    </div>
+</article>
+
+<table>
+    <tr>
+        <td>
+            <strong>
+                <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+            </strong>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+

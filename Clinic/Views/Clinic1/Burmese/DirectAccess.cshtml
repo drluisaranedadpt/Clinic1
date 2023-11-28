@@ -1,0 +1,71 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">The Following Information is protected by California and US Federal Laws</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 align="right">Direct Access to Physical Therapy Services</h5>
+<partial name="_PatientHeaderPartial" />
+<article>
+    <h6 align="right">
+        Effective date: January 1, 2020
+    </h6>
+
+    <div>
+        <br />
+
+        <h6>
+            You are receiving direct physical therapy treatment services from an individual
+            who is a physical therapist licensed by the Physical Therapy Board of California.
+        </h6>
+        <h6>
+            Under California law, you may continue to receive direct physical therapy
+            treatment services for a period of up to 45 calendar days or 12 visits, whichever
+            occurs first,m after which time a physical therapist may continue providing you with
+            physical therapy treatment services only after receiving, from a person holding a
+            physicain and surgeon's certificate issued by the Medical Board of California or by
+            the Osteopathic Medical Board of California, or from a person holding a certificate
+            to practice podiatric medicine from the California Board of Podiatric Medicine and
+            acting within hir or her scope of practice, a dated signature on the physical
+            therapist's plan of care indicating approval of the physical therapist's plan of care
+            and that an in-person patient examination and evaluation was conducted by the
+            physician and surgeon or podiatrist.
+        </h6>
+        <br />
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature" style="border:1px solid black"></canvas>
+                <br>
+                <button type="button" id="accept" class="btn btn-primary">Accept signature</button>
+                <button type="submit" id="save" class="btn btn-primary">Save</button>
+                <br>
+            </p>
+        </form>
+        <hr />
+
+        _____________________________________________________________________________________________________________
+        Patient's Signature /Guarantor (if applicable)                         Date
+        <br />
+        <br />
+        <hr />
+        <p>
+            <table>
+                <tr>
+                    <td>
+                        <strong>
+                            <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+                        </strong>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</article>

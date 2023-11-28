@@ -1,0 +1,98 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">The Following Information is protected by California and US Federal Laws</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 align="right">Assignment</h5>
+<partial name="_PatientHeaderPartial" />
+<article>
+    <header>
+        <h3 align="center">Campus Orthopedics Physical Therapy, Inc.</h3>
+        <h5 align="center">ASSIGNMENT OF BENEFITS</h5>
+
+
+        <p align="right">Effective date: August 1, 2020</p>
+    </header>
+    <div>
+        <h6>
+            <strong>Campus Orthopedics Physical Therapy Inc.</strong>believes that part of good health care practice is to establish and communicate our office
+            financial policy to our patients. We are dedicated to providing the best possible care for you, and we want you to have a
+            full understanding of our policies.
+        </h6>
+        <h6>
+            I hereby authorize direct payment of medical benefits, including medical benefits to which I am entitled to
+            Campus Orthopedics Physical Therapy, Inc. This is a DIRECT ASSIGNMENT OF MY RIGHTS AND BENEFITS. This
+            authorization will remain in effect until cancelled by me in writing. A copy of this authorization is as valid as
+            the original document.
+        </h6>
+        <h6>
+            I authorize the release of any medical information necessary to in order to obtain payment and I understand that
+            I am financially responsible for all charges, late fees, interest, attorney fees and collection charges considered
+            patient responsibility by my insurance company. I understand that if I am not insured I am responsible for the
+            charges of all services provided to me. I authorize Summit Medical Clinic to deposit checks received on my
+            account when made out in my name.
+        </h6>
+        <h6>
+            I have read and I understand Campus Orthopedics Physical Therapy’s financial policies and I accept responsibility for
+            the payment of any fees associated with my care. I also understand and agree that such terms may be amended by the practice
+            at any time for any reason.
+        </h6>
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature"
+                        style="border:1px solid black"></canvas><br>
+                <button type="button" id="accept"
+                        class="btn btn-primary">
+                    Accept signature
+                </button>
+                <button type="submit" id="save"
+                        class="btn btn-primary">
+                    Save
+                </button><br>
+            </p>
+        </form>
+        <hr />
+        <div class="col-xs-7">
+            <textarea rows="1" placeholder="Description" class="form-control" name="description" id="description"></textarea>
+        </div>
+        <h6>
+            _________________________________________________________ _____________________________
+            Patient / Guarantor Signature Date
+
+        </h6>
+        <h6>
+            _________________________________________________________ _____________________________
+            Witness Signature Date
+        </h6>
+        <br />
+        <hr />
+        <br />
+        <br />
+        <hr />
+        <h6>
+            Disclaimer: Campus Orthopedics Physical Therapy does not consider an individual seeking treatment to be a patient until a preliminary
+            assessment is completed and the individual has been notified that he or she has been accepted as a patient; simply making
+            an appointment does not automatically initiate doctor-patient relationship. We have the right to refuse services to anyone for any reason.
+        </h6>
+
+        <table>
+            <tr>
+                <td>
+                    <strong>
+                        <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+                    </strong>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</article>
+

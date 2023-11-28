@@ -1,0 +1,71 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">La siguiente información está protegida por las leyes federales de California y EE. UU.</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 align="right">Acceso directo a los servicios de fisioterapia</h5>
+<partial name="_PatientHeaderPartial" />
+<article>
+    <h6 align="right">
+        Effective date: January 1, 2020
+    </h6>
+
+    <div>
+        <br />
+
+        <h6>
+            Está recibiendo servicios de tratamiento de fisioterapia directa de un individuo
+            que es un fisioterapeuta autorizado por la Junta de Terapia Física de California.
+        </h6>
+        <h6>
+            Según la ley de California, puede continuar recibiendo fisioterapia directa y 
+            servicios de tratamiento por un período de hasta 45 días calendario o 12 visitas, lo que
+            ocurre primero, después del cual un fisioterapeuta puede continuar brindándole
+            servicios de tratamiento de fisioterapia solo después de recibirlos de una persona que tenga un
+            certificado de médico y cirujano emitido por la Junta Médica de California o por
+            la Junta Médica Osteopática de California, o de una persona que tenga un certificado
+            para practicar la medicina podiátrica de la Junta de Medicina Podiátrica de California y
+            actuando dentro de su alcance de práctica, una firma fechada en el físico
+            plan de atención del terapeuta que indica la aprobación del plan de atención del fisioterapeuta
+            y que el examen y evaluación del paciente en persona fue realizado por el
+            médico y cirujano o podólogo.
+        </h6>
+        <br />
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature" style="border:1px solid black"></canvas>
+                <br>
+                <button type="button" id="accept" class="btn btn-primary">Accept signature</button>
+                <button type="submit" id="save" class="btn btn-primary">Save</button>
+                <br>
+            </p>
+        </form>
+        <hr />
+
+        _____________________________________________________________________________________________________________
+        Patient's Signature /Guarantor (if applicable)                         Date
+        <br />
+        <br />
+        <hr />
+        <p>
+            <table>
+                <tr>
+                    <td>
+                        <strong>
+                            <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+                        </strong>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</article>

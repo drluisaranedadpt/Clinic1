@@ -1,0 +1,113 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+
+<partial name="_Law" />
+<partial name="_PortalPartial" />
+<div align="right" class="pagination">
+    <a href="/Home/History"> ❮ Previous</a>
+    &nbsp;&nbsp;
+    <a href="/Home/PastHistory"> Next ❯</a>
+</div>
+<h5 align="right">Covid-19</h5>
+
+<table border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td bgcolor="white" colspan="16" class="border1" question_name="two">
+            <p>
+                <h5 align="left">Covid-19</h5>
+            </p>
+            <p>
+                Be aware of and refrain from behavior that unreasonably places the health of others at risk.
+                You should ask about what they can do to prevent transmission of infectious disease.               
+            </p>
+            <p>
+                Refrain from being disruptive in the clinical setting.
+            </p>
+            <p>
+                Cooperate with agreed-on treatment plans. Since adhering to treatment is often essential to public 
+                and individual safety, patients should disclose whether they have or have not followed the agreed-on 
+                plan and indicate when they would like to reconsider the plan.
+            </p>
+</td>
+    </tr>
+    <tr>
+        <td width="1%" class="border3"> <div align="right">.</div></td>
+        <td width="1%" class="border3" question_name="one"><div align="left"></div></td>
+
+        <td width="10%" class="border2"><div align="right">Not Vaccinated</div></td>
+        <td width="5%" class="border2"><input id="NotVaccinated" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="15%" class="border2"><div align="right">Viral test Negative [-]</div></td>
+        <td width="5%" class="border2"><input id="TestNegative" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="15%" class="border2"><div align="right">Viral test Positive [+]</div></td>
+        <td width="5%" class="border2"><input id="TestPositive" placeholder="" name="one" type="radio" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="8%" class="border2"><div align="right">One Dose</div></td>
+        <td width="5%" class="border2"><input id="OneDose" placeholder="" name="one" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="8%" class="border2"><div align="right">Two Doses</div></td>
+        <td width="5%" class="border2"><input id="TwoDosis" placeholder="" name="one" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="10%" class="border2"><div align="right">Fully Vaccine'd</div></td>
+        <td width="5%" class="border2"><input id="FullyVaccinated" placeholder="" name="one" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+        <td width="1%" class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"><div align="right"></div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+    </tr>
+</table>
+<br />
+<hr />
+<table border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td bgcolor="white" colspan="16" class="border1" question_name="two">
+            <p>
+                <h6 align="left">Covid-19</h6>
+            </p>
+            <p>https://covid19.ca.gov/</p>
+            <p>https://www.cdc.gov/coronavirus/2019-ncov/index.html</p>
+            <p>
+                If you are fully vaccinated, you can resume activities that you did before the pandemic without wearing a
+                mask or physically distancing, except where required by laws, rules, regulations, or local guidance.
+            </p>
+            <p>
+                In general, fully vaccinated Health Care Personnel [HCP] should continue to wear source control while at work. However, fully vaccinated
+                HCP could dine and socialize together in break rooms and conduct in- person meetings without source control or
+                physical distancing. If unvaccinated HCP are present, everyone should wear source control and unvaccinated HCP
+                should physically distance from others.
+            </p>
+        </td>
+    </tr>
+</table>

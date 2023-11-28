@@ -1,0 +1,102 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">The Following Information is protected by California and US Federal Laws</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 align="right">Assignment</h5>
+<partial name="_PatientHeaderPartial" />
+<article>
+    <header>
+        <h3 align="center">Campus Orthopedics Physical Therapy, Inc.</h3>
+        <h5 align="center">ASIGNACIÓN DE BENEFICIOS</h5>
+
+
+        <p align="right">
+            Fecha de vigencia: 1 de agosto de 2020
+        </p>
+    </header>
+    <div>
+        <h6>
+            <strong> Campus Orthopaedics Physical Therapy Inc. </strong> cree que parte de una buena práctica de atención médica es establecer y comunicar nuestra oficina
+            política financiera a nuestros pacientes. Estamos dedicados a brindarle la mejor atención posible y queremos que tenga un
+            Comprensión completa de nuestras políticas.
+        </h6>
+        <h6>
+            Por la presente autorizo ​​el pago directo de beneficios médicos, incluidos los beneficios médicos a los que tengo derecho
+            Campus Orthopaedics Physical Therapy, Inc. Esta es una CESIÓN DIRECTA DE MIS DERECHOS Y BENEFICIOS. Esto
+            La autorización permanecerá en vigor hasta que yo la cancele por escrito. Una copia de esta autorización es tan válida como
+            el documento original.
+        </h6>
+        <h6>
+            Autorizo ​​la divulgación de cualquier información médica necesaria para obtener el pago y entiendo que
+            Soy financieramente responsable de todos los cargos, cargos por mora, intereses, honorarios de abogados y cargos de cobranza considerados
+            responsabilidad del paciente por parte de mi compañía de seguros. Entiendo que si no estoy asegurado soy responsable de la
+            cargos de todos los servicios que se me brindan. Autorizo ​​a Summit Medical Clinic a depositar los cheques recibidos en mi
+            cuenta cuando se hace a mi nombre.
+        </h6>
+        <h6>
+            He leído y comprendo las políticas financieras de Campus Orthopaedics Physical Therapy y acepto la responsabilidad de
+            el pago de cualquier tarifa asociada con mi atención. También entiendo y acepto que dichos términos pueden ser modificados por la práctica
+            en cualquier momento y por cualquier motivo.
+        </h6>
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature"
+                        style="border:1px solid black"></canvas><br>
+                <button type="button" id="accept"
+                        class="btn btn-primary">
+                    Accept signature
+                </button>
+                <button type="submit" id="save"
+                        class="btn btn-primary">
+                    Save
+                </button><br>
+            </p>
+        </form>
+        <hr />
+        <div class="col-xs-7">
+            <textarea rows="1" placeholder="Description" class="form-control" name="description" id="description"></textarea>
+        </div>
+        <h6>
+            _________________________________________________________ _____________________________
+
+            Firma de la paciente / garante                            Fecha(feminine)
+            Firma del paciente / garante                              Fecha(masculine)
+
+        </h6>
+        <h6>
+            _________________________________________________________ _____________________________
+            Firma del testigo                                          Fecha
+        </h6>
+        <br />
+        <hr />
+        <br />
+        <br />
+        <hr />
+        <h6>
+            Descargo de responsabilidad: Campus Orthopaedics Physical Therapy no considera que una persona que busca tratamiento sea un paciente hasta una
+            se completa la evaluación y se le ha notificado al individuo que ha sido aceptado como paciente; simplemente haciendo
+            una cita no inicia automáticamente la relación médico-paciente. Tenemos derecho a rechazar los servicios a cualquier persona por cualquier motivo.
+        </h6>
+
+        <table>
+            <tr>
+                <td>
+                    <strong>
+                        <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+                    </strong>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</article>
+

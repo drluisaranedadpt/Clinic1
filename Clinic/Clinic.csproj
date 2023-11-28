@@ -1,0 +1,469 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-Clinic-DD9F7B8D-9355-4689-BB60-8AA9AE1E6CF8</UserSecretsId>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\Clinic1\**" />
+    <Content Remove="Views\Clinic1\**" />
+    <EmbeddedResource Remove="Views\Clinic1\**" />
+    <None Remove="Views\Clinic1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\AccountController.cs" />
+    <Compile Remove="Controllers\UserService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Arabic\Accident.cshtml" />
+    <Content Remove="Views\Home\Arabic\Agreement.cshtml" />
+    <Content Remove="Views\Home\Arabic\Assignment.cshtml" />
+    <Content Remove="Views\Home\Arabic\Cancellation.cshtml" />
+    <Content Remove="Views\Home\Arabic\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\Arabic\DirectAccess_Chinese.cshtml" />
+    <Content Remove="Views\Home\Arabic\Goals.cshtml" />
+    <Content Remove="Views\Home\Arabic\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\Arabic\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\Arabic\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\Arabic\History.cshtml" />
+    <Content Remove="Views\Home\Arabic\Index.cshtml" />
+    <Content Remove="Views\Home\Arabic\Intake.cshtml" />
+    <Content Remove="Views\Home\Arabic\Lien.cshtml" />
+    <Content Remove="Views\Home\Arabic\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\Arabic\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\Arabic\PastHistory.cshtml" />
+    <Content Remove="Views\Home\Arabic\Portal.cshtml" />
+    <Content Remove="Views\Home\Arabic\Privacy.cshtml" />
+    <Content Remove="Views\Home\Arabic\Release.cshtml" />
+    <Content Remove="Views\Home\Arabic\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\Arabic\Welcome.cshtml" />
+    <Content Remove="Views\Home\Burmese\Accident.cshtml" />
+    <Content Remove="Views\Home\Burmese\Agreement.cshtml" />
+    <Content Remove="Views\Home\Burmese\Assignment.cshtml" />
+    <Content Remove="Views\Home\Burmese\Cancellation.cshtml" />
+    <Content Remove="Views\Home\Burmese\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\Burmese\DirectAccess_Chinese.cshtml" />
+    <Content Remove="Views\Home\Burmese\Goals.cshtml" />
+    <Content Remove="Views\Home\Burmese\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\Burmese\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\Burmese\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\Burmese\History.cshtml" />
+    <Content Remove="Views\Home\Burmese\Index.cshtml" />
+    <Content Remove="Views\Home\Burmese\Intake.cshtml" />
+    <Content Remove="Views\Home\Burmese\Lien.cshtml" />
+    <Content Remove="Views\Home\Burmese\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\Burmese\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\Burmese\PastHistory.cshtml" />
+    <Content Remove="Views\Home\Burmese\Portal.cshtml" />
+    <Content Remove="Views\Home\Burmese\Privacy.cshtml" />
+    <Content Remove="Views\Home\Burmese\Release.cshtml" />
+    <Content Remove="Views\Home\Burmese\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\Burmese\Welcome.cshtml" />
+    <Content Remove="Views\Home\Chinese\Accident.cshtml" />
+    <Content Remove="Views\Home\Chinese\Agreement.cshtml" />
+    <Content Remove="Views\Home\Chinese\Assignment.cshtml" />
+    <Content Remove="Views\Home\Chinese\Cancellation.cshtml" />
+    <Content Remove="Views\Home\Chinese\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\Chinese\DirectAccess_Chinese.cshtml" />
+    <Content Remove="Views\Home\Chinese\Goals.cshtml" />
+    <Content Remove="Views\Home\Chinese\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\Chinese\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\Chinese\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\Chinese\History.cshtml" />
+    <Content Remove="Views\Home\Chinese\Index.cshtml" />
+    <Content Remove="Views\Home\Chinese\Intake.cshtml" />
+    <Content Remove="Views\Home\Chinese\Lien.cshtml" />
+    <Content Remove="Views\Home\Chinese\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\Chinese\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\Chinese\PastHistory.cshtml" />
+    <Content Remove="Views\Home\Chinese\Portal.cshtml" />
+    <Content Remove="Views\Home\Chinese\Privacy.cshtml" />
+    <Content Remove="Views\Home\Chinese\Release.cshtml" />
+    <Content Remove="Views\Home\Chinese\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\Chinese\Welcome.cshtml" />
+    <Content Remove="Views\Home\English\Accident.cshtml" />
+    <Content Remove="Views\Home\English\Agreement.cshtml" />
+    <Content Remove="Views\Home\English\Assignment.cshtml" />
+    <Content Remove="Views\Home\English\Cancellation.cshtml" />
+    <Content Remove="Views\Home\English\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\English\Goals.cshtml" />
+    <Content Remove="Views\Home\English\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\English\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\English\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\English\History.cshtml" />
+    <Content Remove="Views\Home\English\Intake.cshtml" />
+    <Content Remove="Views\Home\English\Lien.cshtml" />
+    <Content Remove="Views\Home\English\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\English\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\English\PastHistory.cshtml" />
+    <Content Remove="Views\Home\English\Portal.cshtml" />
+    <Content Remove="Views\Home\English\Privacy.cshtml" />
+    <Content Remove="Views\Home\English\Release.cshtml" />
+    <Content Remove="Views\Home\English\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\English\Welcome.cshtml" />
+    <Content Remove="Views\Home\Filipino\Accident.cshtml" />
+    <Content Remove="Views\Home\Filipino\Agreement.cshtml" />
+    <Content Remove="Views\Home\Filipino\Assignment.cshtml" />
+    <Content Remove="Views\Home\Filipino\Cancellation.cshtml" />
+    <Content Remove="Views\Home\Filipino\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\Filipino\DirectAccess_Chinese.cshtml" />
+    <Content Remove="Views\Home\Filipino\Goals.cshtml" />
+    <Content Remove="Views\Home\Filipino\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\Filipino\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\Filipino\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\Filipino\History.cshtml" />
+    <Content Remove="Views\Home\Filipino\Index.cshtml" />
+    <Content Remove="Views\Home\Filipino\Intake.cshtml" />
+    <Content Remove="Views\Home\Filipino\Lien.cshtml" />
+    <Content Remove="Views\Home\Filipino\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\Filipino\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\Filipino\PastHistory.cshtml" />
+    <Content Remove="Views\Home\Filipino\Portal.cshtml" />
+    <Content Remove="Views\Home\Filipino\Privacy.cshtml" />
+    <Content Remove="Views\Home\Filipino\Release.cshtml" />
+    <Content Remove="Views\Home\Filipino\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\Filipino\Welcome.cshtml" />
+    <Content Remove="Views\Home\French\Accident.cshtml" />
+    <Content Remove="Views\Home\French\Agreement.cshtml" />
+    <Content Remove="Views\Home\French\Assignment.cshtml" />
+    <Content Remove="Views\Home\French\Cancellation.cshtml" />
+    <Content Remove="Views\Home\French\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\French\DirectAccess_Chinese.cshtml" />
+    <Content Remove="Views\Home\French\Goals.cshtml" />
+    <Content Remove="Views\Home\French\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\French\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\French\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\French\History.cshtml" />
+    <Content Remove="Views\Home\French\Index.cshtml" />
+    <Content Remove="Views\Home\French\Intake.cshtml" />
+    <Content Remove="Views\Home\French\Lien.cshtml" />
+    <Content Remove="Views\Home\French\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\French\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\French\PastHistory.cshtml" />
+    <Content Remove="Views\Home\French\Portal.cshtml" />
+    <Content Remove="Views\Home\French\Privacy.cshtml" />
+    <Content Remove="Views\Home\French\Release.cshtml" />
+    <Content Remove="Views\Home\French\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\French\Welcome.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Accident.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Agreement.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Assignment.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Cancellation.cshtml" />
+    <Content Remove="Views\Home\Portuguese\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\Portuguese\DirectAccess_Chinese.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Goals.cshtml" />
+    <Content Remove="Views\Home\Portuguese\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\Portuguese\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\Portuguese\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\Portuguese\History.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Index.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Intake.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Lien.cshtml" />
+    <Content Remove="Views\Home\Portuguese\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\Portuguese\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\Portuguese\PastHistory.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Portal.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Privacy.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Release.cshtml" />
+    <Content Remove="Views\Home\Portuguese\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\Portuguese\Welcome.cshtml" />
+    <Content Remove="Views\Home\Russian\Accident.cshtml" />
+    <Content Remove="Views\Home\Russian\Agreement.cshtml" />
+    <Content Remove="Views\Home\Russian\Assignment.cshtml" />
+    <Content Remove="Views\Home\Russian\Cancellation.cshtml" />
+    <Content Remove="Views\Home\Russian\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\Russian\DirectAccess_Chinese.cshtml" />
+    <Content Remove="Views\Home\Russian\Goals.cshtml" />
+    <Content Remove="Views\Home\Russian\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\Russian\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\Russian\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\Russian\History.cshtml" />
+    <Content Remove="Views\Home\Russian\Index.cshtml" />
+    <Content Remove="Views\Home\Russian\Intake.cshtml" />
+    <Content Remove="Views\Home\Russian\Lien.cshtml" />
+    <Content Remove="Views\Home\Russian\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\Russian\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\Russian\PastHistory.cshtml" />
+    <Content Remove="Views\Home\Russian\Portal.cshtml" />
+    <Content Remove="Views\Home\Russian\Privacy.cshtml" />
+    <Content Remove="Views\Home\Russian\Release.cshtml" />
+    <Content Remove="Views\Home\Russian\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\Russian\Welcome.cshtml" />
+    <Content Remove="Views\Home\Spanish\Accident.cshtml" />
+    <Content Remove="Views\Home\Spanish\Agreement.cshtml" />
+    <Content Remove="Views\Home\Spanish\Assignment.cshtml" />
+    <Content Remove="Views\Home\Spanish\Cancellation.cshtml" />
+    <Content Remove="Views\Home\Spanish\DirectAccess.cshtml" />
+    <Content Remove="Views\Home\Spanish\Goals.cshtml" />
+    <Content Remove="Views\Home\Spanish\GoalsGait.cshtml" />
+    <Content Remove="Views\Home\Spanish\GoalsLE.cshtml" />
+    <Content Remove="Views\Home\Spanish\GoalsUE.cshtml" />
+    <Content Remove="Views\Home\Spanish\History.cshtml" />
+    <Content Remove="Views\Home\Spanish\Index.cshtml" />
+    <Content Remove="Views\Home\Spanish\Intake.cshtml" />
+    <Content Remove="Views\Home\Spanish\Lien.cshtml" />
+    <Content Remove="Views\Home\Spanish\MedicalConsent.cshtml" />
+    <Content Remove="Views\Home\Spanish\PainDrawing.cshtml" />
+    <Content Remove="Views\Home\Spanish\PastHistory.cshtml" />
+    <Content Remove="Views\Home\Spanish\Portal.cshtml" />
+    <Content Remove="Views\Home\Spanish\Privacy.cshtml" />
+    <Content Remove="Views\Home\Spanish\Release.cshtml" />
+    <Content Remove="Views\Home\Spanish\SpecialTest.cshtml" />
+    <Content Remove="Views\Home\Spanish\Welcome.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Drawing\Index.cshtml" />
+    <None Include="Views\Home\Arabic\Accident.cshtml" />
+    <None Include="Views\Home\Arabic\Agreement.cshtml" />
+    <None Include="Views\Home\Arabic\Assignment.cshtml" />
+    <None Include="Views\Home\Arabic\Cancellation.cshtml" />
+    <None Include="Views\Home\Arabic\DirectAccess.cshtml" />
+    <None Include="Views\Home\Arabic\DirectAccess_Chinese.cshtml" />
+    <None Include="Views\Home\Arabic\Goals.cshtml" />
+    <None Include="Views\Home\Arabic\GoalsGait.cshtml" />
+    <None Include="Views\Home\Arabic\GoalsLE.cshtml" />
+    <None Include="Views\Home\Arabic\GoalsUE.cshtml" />
+    <None Include="Views\Home\Arabic\History.cshtml" />
+    <None Include="Views\Home\Arabic\Index.cshtml" />
+    <None Include="Views\Home\Arabic\Intake.cshtml" />
+    <None Include="Views\Home\Arabic\Lien.cshtml" />
+    <None Include="Views\Home\Arabic\MedicalConsent.cshtml" />
+    <None Include="Views\Home\Arabic\PainDrawing.cshtml" />
+    <None Include="Views\Home\Arabic\PastHistory.cshtml" />
+    <None Include="Views\Home\Arabic\Portal.cshtml" />
+    <None Include="Views\Home\Arabic\Privacy.cshtml" />
+    <None Include="Views\Home\Arabic\Release.cshtml" />
+    <None Include="Views\Home\Arabic\SpecialTest.cshtml" />
+    <None Include="Views\Home\Arabic\Welcome.cshtml" />
+    <None Include="Views\Home\Burmese\Accident.cshtml" />
+    <None Include="Views\Home\Burmese\Agreement.cshtml" />
+    <None Include="Views\Home\Burmese\Assignment.cshtml" />
+    <None Include="Views\Home\Burmese\Cancellation.cshtml" />
+    <None Include="Views\Home\Burmese\DirectAccess.cshtml" />
+    <None Include="Views\Home\Burmese\DirectAccess_Chinese.cshtml" />
+    <None Include="Views\Home\Burmese\Goals.cshtml" />
+    <None Include="Views\Home\Burmese\GoalsGait.cshtml" />
+    <None Include="Views\Home\Burmese\GoalsLE.cshtml" />
+    <None Include="Views\Home\Burmese\GoalsUE.cshtml" />
+    <None Include="Views\Home\Burmese\History.cshtml" />
+    <None Include="Views\Home\Burmese\Index.cshtml" />
+    <None Include="Views\Home\Burmese\Intake.cshtml" />
+    <None Include="Views\Home\Burmese\Lien.cshtml" />
+    <None Include="Views\Home\Burmese\MedicalConsent.cshtml" />
+    <None Include="Views\Home\Burmese\PainDrawing.cshtml" />
+    <None Include="Views\Home\Burmese\PastHistory.cshtml" />
+    <None Include="Views\Home\Burmese\Portal.cshtml" />
+    <None Include="Views\Home\Burmese\Privacy.cshtml" />
+    <None Include="Views\Home\Burmese\Release.cshtml" />
+    <None Include="Views\Home\Burmese\SpecialTest.cshtml" />
+    <None Include="Views\Home\Burmese\Welcome.cshtml" />
+    <None Include="Views\Home\Chinese\Accident.cshtml" />
+    <None Include="Views\Home\Chinese\Agreement.cshtml" />
+    <None Include="Views\Home\Chinese\Assignment.cshtml" />
+    <None Include="Views\Home\Chinese\Cancellation.cshtml" />
+    <None Include="Views\Home\Chinese\DirectAccess.cshtml" />
+    <None Include="Views\Home\Chinese\DirectAccess_Chinese.cshtml" />
+    <None Include="Views\Home\Chinese\Goals.cshtml" />
+    <None Include="Views\Home\Chinese\GoalsGait.cshtml" />
+    <None Include="Views\Home\Chinese\GoalsLE.cshtml" />
+    <None Include="Views\Home\Chinese\GoalsUE.cshtml" />
+    <None Include="Views\Home\Chinese\History.cshtml" />
+    <None Include="Views\Home\Chinese\Index.cshtml" />
+    <None Include="Views\Home\Chinese\Intake.cshtml" />
+    <None Include="Views\Home\Chinese\Lien.cshtml" />
+    <None Include="Views\Home\Chinese\MedicalConsent.cshtml" />
+    <None Include="Views\Home\Chinese\PainDrawing.cshtml" />
+    <None Include="Views\Home\Chinese\PastHistory.cshtml" />
+    <None Include="Views\Home\Chinese\Portal.cshtml" />
+    <None Include="Views\Home\Chinese\Privacy.cshtml" />
+    <None Include="Views\Home\Chinese\Release.cshtml" />
+    <None Include="Views\Home\Chinese\SpecialTest.cshtml" />
+    <None Include="Views\Home\Chinese\Welcome.cshtml" />
+    <None Include="Views\Home\English\Accident.cshtml" />
+    <None Include="Views\Home\English\Agreement.cshtml" />
+    <None Include="Views\Home\English\Assignment.cshtml" />
+    <None Include="Views\Home\English\Cancellation.cshtml" />
+    <None Include="Views\Home\English\DirectAccess.cshtml" />
+    <None Include="Views\Home\English\Goals.cshtml" />
+    <None Include="Views\Home\English\GoalsGait.cshtml" />
+    <None Include="Views\Home\English\GoalsLE.cshtml" />
+    <None Include="Views\Home\English\GoalsUE.cshtml" />
+    <None Include="Views\Home\English\History.cshtml" />
+    <None Include="Views\Home\English\Intake.cshtml" />
+    <None Include="Views\Home\English\Lien.cshtml" />
+    <None Include="Views\Home\English\MedicalConsent.cshtml" />
+    <None Include="Views\Home\English\PainDrawing.cshtml" />
+    <None Include="Views\Home\English\PastHistory.cshtml" />
+    <None Include="Views\Home\English\Portal.cshtml" />
+    <None Include="Views\Home\English\Privacy.cshtml" />
+    <None Include="Views\Home\English\Release.cshtml" />
+    <None Include="Views\Home\English\SpecialTest.cshtml" />
+    <None Include="Views\Home\English\Welcome.cshtml" />
+    <None Include="Views\Home\Filipino\Accident.cshtml" />
+    <None Include="Views\Home\Filipino\Agreement.cshtml" />
+    <None Include="Views\Home\Filipino\Assignment.cshtml" />
+    <None Include="Views\Home\Filipino\Cancellation.cshtml" />
+    <None Include="Views\Home\Filipino\DirectAccess.cshtml" />
+    <None Include="Views\Home\Filipino\DirectAccess_Chinese.cshtml" />
+    <None Include="Views\Home\Filipino\Goals.cshtml" />
+    <None Include="Views\Home\Filipino\GoalsGait.cshtml" />
+    <None Include="Views\Home\Filipino\GoalsLE.cshtml" />
+    <None Include="Views\Home\Filipino\GoalsUE.cshtml" />
+    <None Include="Views\Home\Filipino\History.cshtml" />
+    <None Include="Views\Home\Filipino\Index.cshtml" />
+    <None Include="Views\Home\Filipino\Intake.cshtml" />
+    <None Include="Views\Home\Filipino\Lien.cshtml" />
+    <None Include="Views\Home\Filipino\MedicalConsent.cshtml" />
+    <None Include="Views\Home\Filipino\PainDrawing.cshtml" />
+    <None Include="Views\Home\Filipino\PastHistory.cshtml" />
+    <None Include="Views\Home\Filipino\Portal.cshtml" />
+    <None Include="Views\Home\Filipino\Privacy.cshtml" />
+    <None Include="Views\Home\Filipino\Release.cshtml" />
+    <None Include="Views\Home\Filipino\SpecialTest.cshtml" />
+    <None Include="Views\Home\Filipino\Welcome.cshtml" />
+    <None Include="Views\Home\French\Accident.cshtml" />
+    <None Include="Views\Home\French\Agreement.cshtml" />
+    <None Include="Views\Home\French\Assignment.cshtml" />
+    <None Include="Views\Home\French\Cancellation.cshtml" />
+    <None Include="Views\Home\French\DirectAccess.cshtml" />
+    <None Include="Views\Home\French\DirectAccess_Chinese.cshtml" />
+    <None Include="Views\Home\French\Goals.cshtml" />
+    <None Include="Views\Home\French\GoalsGait.cshtml" />
+    <None Include="Views\Home\French\GoalsLE.cshtml" />
+    <None Include="Views\Home\French\GoalsUE.cshtml" />
+    <None Include="Views\Home\French\History.cshtml" />
+    <None Include="Views\Home\French\Index.cshtml" />
+    <None Include="Views\Home\French\Intake.cshtml" />
+    <None Include="Views\Home\French\Lien.cshtml" />
+    <None Include="Views\Home\French\MedicalConsent.cshtml" />
+    <None Include="Views\Home\French\PainDrawing.cshtml" />
+    <None Include="Views\Home\French\PastHistory.cshtml" />
+    <None Include="Views\Home\French\Portal.cshtml" />
+    <None Include="Views\Home\French\Privacy.cshtml" />
+    <None Include="Views\Home\French\Release.cshtml" />
+    <None Include="Views\Home\French\SpecialTest.cshtml" />
+    <None Include="Views\Home\French\Welcome.cshtml" />
+    <None Include="Views\Home\Portuguese\Accident.cshtml" />
+    <None Include="Views\Home\Portuguese\Agreement.cshtml" />
+    <None Include="Views\Home\Portuguese\Assignment.cshtml" />
+    <None Include="Views\Home\Portuguese\Cancellation.cshtml" />
+    <None Include="Views\Home\Portuguese\DirectAccess.cshtml" />
+    <None Include="Views\Home\Portuguese\DirectAccess_Chinese.cshtml" />
+    <None Include="Views\Home\Portuguese\Goals.cshtml" />
+    <None Include="Views\Home\Portuguese\GoalsGait.cshtml" />
+    <None Include="Views\Home\Portuguese\GoalsLE.cshtml" />
+    <None Include="Views\Home\Portuguese\GoalsUE.cshtml" />
+    <None Include="Views\Home\Portuguese\History.cshtml" />
+    <None Include="Views\Home\Portuguese\Index.cshtml" />
+    <None Include="Views\Home\Portuguese\Intake.cshtml" />
+    <None Include="Views\Home\Portuguese\Lien.cshtml" />
+    <None Include="Views\Home\Portuguese\MedicalConsent.cshtml" />
+    <None Include="Views\Home\Portuguese\PainDrawing.cshtml" />
+    <None Include="Views\Home\Portuguese\PastHistory.cshtml" />
+    <None Include="Views\Home\Portuguese\Portal.cshtml" />
+    <None Include="Views\Home\Portuguese\Privacy.cshtml" />
+    <None Include="Views\Home\Portuguese\Release.cshtml" />
+    <None Include="Views\Home\Portuguese\SpecialTest.cshtml" />
+    <None Include="Views\Home\Portuguese\Welcome.cshtml" />
+    <None Include="Views\Home\Russian\Accident.cshtml" />
+    <None Include="Views\Home\Russian\Agreement.cshtml" />
+    <None Include="Views\Home\Russian\Assignment.cshtml" />
+    <None Include="Views\Home\Russian\Cancellation.cshtml" />
+    <None Include="Views\Home\Russian\DirectAccess.cshtml" />
+    <None Include="Views\Home\Russian\DirectAccess_Chinese.cshtml" />
+    <None Include="Views\Home\Russian\Goals.cshtml" />
+    <None Include="Views\Home\Russian\GoalsGait.cshtml" />
+    <None Include="Views\Home\Russian\GoalsLE.cshtml" />
+    <None Include="Views\Home\Russian\GoalsUE.cshtml" />
+    <None Include="Views\Home\Russian\History.cshtml" />
+    <None Include="Views\Home\Russian\Index.cshtml" />
+    <None Include="Views\Home\Russian\Intake.cshtml" />
+    <None Include="Views\Home\Russian\Lien.cshtml" />
+    <None Include="Views\Home\Russian\MedicalConsent.cshtml" />
+    <None Include="Views\Home\Russian\PainDrawing.cshtml" />
+    <None Include="Views\Home\Russian\PastHistory.cshtml" />
+    <None Include="Views\Home\Russian\Portal.cshtml" />
+    <None Include="Views\Home\Russian\Privacy.cshtml" />
+    <None Include="Views\Home\Russian\Release.cshtml" />
+    <None Include="Views\Home\Russian\SpecialTest.cshtml" />
+    <None Include="Views\Home\Russian\Welcome.cshtml" />
+    <None Include="Views\Home\Spanish\Accident.cshtml" />
+    <None Include="Views\Home\Spanish\Agreement.cshtml" />
+    <None Include="Views\Home\Spanish\Assignment.cshtml" />
+    <None Include="Views\Home\Spanish\Cancellation.cshtml" />
+    <None Include="Views\Home\Spanish\DirectAccess.cshtml" />
+    <None Include="Views\Home\Spanish\Goals.cshtml" />
+    <None Include="Views\Home\Spanish\GoalsGait.cshtml" />
+    <None Include="Views\Home\Spanish\GoalsLE.cshtml" />
+    <None Include="Views\Home\Spanish\GoalsUE.cshtml" />
+    <None Include="Views\Home\Spanish\History.cshtml" />
+    <None Include="Views\Home\Spanish\Index.cshtml" />
+    <None Include="Views\Home\Spanish\Intake.cshtml" />
+    <None Include="Views\Home\Spanish\Lien.cshtml" />
+    <None Include="Views\Home\Spanish\MedicalConsent.cshtml" />
+    <None Include="Views\Home\Spanish\PainDrawing.cshtml" />
+    <None Include="Views\Home\Spanish\PastHistory.cshtml" />
+    <None Include="Views\Home\Spanish\Portal.cshtml" />
+    <None Include="Views\Home\Spanish\Privacy.cshtml" />
+    <None Include="Views\Home\Spanish\Release.cshtml" />
+    <None Include="Views\Home\Spanish\SpecialTest.cshtml" />
+    <None Include="Views\Home\Spanish\Welcome.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.90" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.52.0.2382" />
+    <PackageReference Include="Google.Apis.Core" Version="1.52.0" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.24" />
+    <PackageReference Include="Hangfire.SqlServer" Version="1.7.24" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Twitter" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="MySql.Data" Version="8.0.26" />
+    <PackageReference Include="MySql.Data.EntityFramework" Version="8.0.26" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="MySqlConnector" Version="1.3.11" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Postal.AspNetCore" Version="2.7.1" />
+    <PackageReference Include="python" Version="3.9.6" />
+    <PackageReference Include="signaturepad" Version="1.5.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClinicDataLibrary\ClinicDataLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Home\Index.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

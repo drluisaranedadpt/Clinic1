@@ -1,0 +1,454 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<partial name="_Law" />
+<partial name="_PortalPartial" />
+<h5>Goals Lower Extremities</h5>
+@*<partial name="_PatientHeaderPartial" />*@
+<partial name="_InstructionsPortalPartial" />
+<br />
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td colspan="24" class="border1" question_name="two">
+            <p>We have provided goals that you may want to accomplished while in Physical Therapy.</p>
+        </td>
+    </tr>
+    <tr>
+        <td width="2%" class="border3"> <div align="right">1.</div></td>
+        <td width="30%" class="border3" question_name="one"><div align="left">Any of usual work, housework or school activities</div></td>
+
+        <td width="1%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="10%" class="border2">No difficulties</td>
+
+        <td width="1%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="10%" class="border2">A little bit</td>
+
+        <td width="1%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="10%" class="border2">Moderate</td>
+
+        <td width="1%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="10%" class="border2">A quite bit</td>
+
+        <td width="1%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="10%" class="border2">Extreme/Unable</td>
+
+        <td width="1%" class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">2.</div></td>
+        <td class="border3" question_name="one"><div align="left">Usual hobbies, recreational or sporting activities</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">3.</div></td>
+        <td class="border3" question_name="one"><div align="left">Getting into or out of the bath</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">4.</div></td>
+        <td class="border3" question_name="one"><div align="left">Walking between rooms</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">5.</div></td>
+        <td class="border3" question_name="one"><div align="left">Putting on your shoes or socks</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">6.</div></td>
+        <td class="border3" question_name="one"><div align="left">Squatting</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">7.</div></td>
+        <td class="border3" question_name="one"><div align="left">Lifting an object from the floor</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">8.</div></td>
+        <td class="border3" question_name="one"><div align="left">Performing light activities around home</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">9. </div></td>
+        <td class="border3" question_name="one"><div align="left">Performing heavy activities around home</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">10. </div></td>
+        <td class="border3" question_name="one"><div align="left">Getting into or out of a car</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">11.</div></td>
+        <td class="border3" question_name="one"><div align="left">Walking 2 blocks</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">13.</div></td>
+        <td class="border3" question_name="one"><div align="left">Walking a mile</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">13. </div></td>
+        <td class="border3" question_name="one"><div align="left">Going up or down 10 stairs</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">14.</div></td>
+        <td question_name="one"><div align="left">Standing for 1 hour</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+
+    <tr>
+        <td class="border3"> <div align="right">15.</div></td>
+        <td class="border3" question_name="one"><div align="left">Sitting for 1 hour</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">16.</div></td>
+        <td class="border3" question_name="one"><div align="left">Running on even ground</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">17.</div></td>
+        <td class="border3" question_name="one"><div align="left">Running on uneven ground</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">18.</div></td>
+        <td class="border3" question_name="one"><div align="left">Making sharp turns while running fast</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">19.</div></td>
+        <td class="border3" question_name="one"><div align="left">Hopping</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right">20.</div></td>
+        <td class="border3" question_name="one"><div align="left">Rolling over in bed</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">No difficulties</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A little bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Moderate</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">A quite bit</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Extreme/Unable</td>
+
+        <td class="border2"></td>
+    </tr>
+</table>
+
+<hr />
+<hr />
+<div align="center">
+    <strong>
+        <input name="Print" type="button" class="btn btn-success" onClick="window.print();return false" value="Print page">
+    </strong>
+</div>
+<hr />

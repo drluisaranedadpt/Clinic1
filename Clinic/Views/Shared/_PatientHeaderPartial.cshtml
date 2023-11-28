@@ -1,0 +1,72 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td bgcolor="white" colspan="24" class="border1" question_name="two">
+            <p>
+                Campus Orthopedics Physical Therapy does not consider an individual seeking treatment to be a patient until a preliminary
+                assessment is completed and the individual has been notified that he or she has been accepted as a patient; simply making an appointment
+                does not automatically initiate doctor-patient relationship. We have the right to refuse services to anyone for any reason.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="2%" class="border3"><div align="right"></div></td>
+
+        <td width="10%" class="border2" align="left">Chart Number [for office use] </td>
+        <td width="5%" class="border2" align="left"><input size="1" type="text" class="form-control" id="lastName" placeholder="" name="Chart Number"></td>
+
+        <td width="5%" class="border2" align="right">Last Name</td>
+        <td width="10%" class="border2" align="left"><input size="1" type="text" class="form-control" id="lastName" placeholder="" name="Last Name"></td>
+
+        <td width="5%" class="border2" align="right">First Name</td>
+        <td width="10%" class="border2" align="left"><input size="1" type="text" class="form-control" id="firstName" placeholder="" name="First Name"></td>
+
+        <td width="5%" class="border2" align="right">M.I.</td>
+        <td width="10%" class="border2" align="left"><input size="1" type="text" class="form-control" id="MI" placeholder="" name="MiddleInitial"></td>
+
+        <td width="5%" class="border2" align="right">DOB</td>
+        <td width="10%" class="border2" align="left"><input size="1" type="date" class="form-control" id="Age" placeholder="" name="Age"></td>
+
+        <td width="5" class="border2" align="right">Male</td>
+        <td width="2%" class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2" align="right">Female</td>
+        <td width="2%" class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2" align="right">Single</td>
+        <td width="2%" class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td width="5%" class="border2" align="right">Married</td>
+        <td width="2%" class="border2" align="left"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+
+        <td width="2%" class="border2"></td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td width="80%" class="border3"><div align="right"></div></td>
+        <td width="5%" class="border2" align="left"><button class="btn btn-success">Insert</button></td>
+        <td width="5%" class="border2" align="left"><button class="btn btn-info">Update</button></td>
+        <td width="5%" class="border2" align="left"><button class="btn btn-secondary">Update</button></td>
+        <td width="5%" class="border2" align="left"><button class="btn btn-danger">Delete</button></td>
+    </tr>
+</table>
+
+
+    @*<p>
+            <button class="btn btn-success" @onclick="InsertData">Insert</button>
+        </p>*@
+    <br />
+    <hr />

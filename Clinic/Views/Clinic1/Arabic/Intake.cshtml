@@ -1,0 +1,201 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">The Following Information is protected by California and US Federal Laws</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 align="right">Intake</h5>
+
+
+
+<hr />
+<h6 align="left">Personal Information</h6>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td class="border3"><div align="right">1.</div></td>
+
+        <td class="border2" align="left">Last Name</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="lastName" placeholder="Last Name" name="Last Name"></td>
+
+        <td class="border2" align="right">First Name</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="firstName" placeholder="First Name" name="First Name"></td>
+
+        <td class="border2" align="right">Middle Initial</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="MI" placeholder="MI" name="MiddleInitial"></td>
+
+        <td class="border2" align="right">Age</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Age" placeholder="Age" name="Age"></td>
+
+        <td class="border2" align="right">Gender</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Gender" placeholder="Gender" name="Gender"></td>
+
+        <td class="border2" align="right">CDL</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="CDL" placeholder="CDL" name="CDL"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>
+<h6 align="left">Home Address</h6>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td class="border3"><div align="right">2.</div></td>
+
+        <td class="border2" align="left">Street</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Address1" placeholder="Address 1" name="Address1"></td>
+
+        <td class="border2" align="right">Apt</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Apt" placeholder="Apt" name="Apt"></td>
+
+        <td class="border2" align="right">City</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="City" placeholder="City" name="City"></td>
+
+        <td class="border2" align="right">State</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="State" placeholder="State" name="State"></td>
+
+        <td class="border2" align="right">Zip</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Zip" placeholder="Zip" name="Zip"></td>
+
+        <td class="border2"></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>
+<h6 align="left">Referring Physician</h6>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td class="border3"><div align="right">3.</div></td>
+
+        <td class="border2" align="left">Last</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="lastName" placeholder="Last Name" name="Last Name"></td>
+
+        <td class="border2" align="right">First</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="firstName" placeholder="First Name" name="First Name"></td>
+
+        <td class="border2" align="right">City</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="City" placeholder="City" name="City"></td>
+
+        <td class="border2" align="right">Phone Number</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="PhoneNumber" placeholder="Phone" name="Phone"></td>
+
+        <td class="border2" align="right"></td>
+        <td class="border2" align="left"></td>
+
+        <td class="border2" align="right"></td>
+        <td class="border2" align="left"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>
+<h6 align="left">Contact Information</h6>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td class="border3"><div align="right">4.</div></td>
+
+        <td class="border2" align="left">Last</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="lastName" placeholder="Last Name" name="Last Name"></td>
+
+        <td class="border2" align="right">First</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="firstName" placeholder="First Name" name="First Name"></td>
+
+        <td class="border2" align="right">City</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="City" placeholder="City" name="City"></td>
+
+        <td class="border2" align="right">Phone</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="PhoneNumber" placeholder="Phone" name="Phone"></td>
+
+        <td class="border2" align="right">Relationship</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Emergency" placeholder="Relationship" name="Relationship"></td>
+
+        <td class="border2" align="right"></td>
+        <td class="border2" align="left"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>
+<h6 align="left">Primary Insurance</h6>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td class="border3"><div align="right">1.</div></td>
+
+        <td class="border2" align="left">Insurance Name</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Name" placeholder="Name" name="Name"></td>
+
+        <td class="border2" align="right">Policy Number</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Policy Number" placeholder="Policy Number" name="Policy Number"></td>
+
+        <td class="border2" align="right">ID Number</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="ID Number" placeholder="ID Number" name="ID Number"></td>
+
+        <td class="border2" align="right">Authorization #</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Authorization" placeholder="Authorization" name="Authorization"></td>
+
+        <td class="border2" align="right">Deductible</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Deductible" placeholder="Deductible" name="Deductible"></td>
+
+        <td class="border2" align="right">Copayment</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Copayment" placeholder="Copayment" name="Copayment"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>
+<h6 align="left">Secondary Insurance</h6>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td class="border3"><div align="right">2.</div></td>
+
+        <td class="border2" align="left">Insurance Name</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Name" placeholder="Name" name="Name"></td>
+
+        <td class="border2" align="right">Policy Number</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Policy Number" placeholder="Policy Number" name="Policy Number"></td>
+
+        <td class="border2" align="right">ID Number</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="ID Number" placeholder="ID Number" name="ID Number"></td>
+
+        <td class="border2" align="right">Authorization #</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Authorization" placeholder="Authorization" name="Authorization"></td>
+
+        <td class="border2" align="right">Deductible</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Deductible" placeholder="Deductible" name="Deductible"></td>
+
+        <td class="border2" align="right">Copayment</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Copayment" placeholder="Copayment" name="Copayment"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>
+<h6 align="left">Tertiary Insurance </h6>
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td class="border3"><div align="right">3.</div></td>
+
+        <td class="border2" align="left">Insurance Name</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Name" placeholder="Name" name="Name"></td>
+
+        <td class="border2" align="right">Policy Number</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Policy Number" placeholder="Policy Number" name="Policy Number"></td>
+
+        <td class="border2" align="right">ID Number</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="ID Number" placeholder="ID Number" name="ID Number"></td>
+
+        <td class="border2" align="right">Authorization #</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Authorization" placeholder="Authorization" name="Authorization"></td>
+
+        <td class="border2" align="right">Deductible</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Deductible" placeholder="Deductible" name="Deductible"></td>
+
+        <td class="border2" align="right">Copayment</td>
+        <td class="border2" align="left"><input size="1" type="text" class="form-control" id="Copayment" placeholder="Copayment" name="Copayment"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>

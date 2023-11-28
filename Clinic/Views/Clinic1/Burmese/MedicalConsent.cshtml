@@ -1,0 +1,80 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">The Following Information is protected by California and US Federal Laws</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 align="right">General Medical Consent</h5>
+<partial name="_PatientHeaderPartial" />
+<hr />
+<article>
+    <div>
+
+        <h6>
+            I have been informed about the expected benefit, and alternative methods of
+            treatment(s), and I understand that <strong>I can refuse</strong> any procedure prior its performance.
+            I understand that the practice of physical therapy usually requires the treating
+            therapist to physically touch the patient in order to evaluate and or guide the patient the proper
+            way to do an exercise so as to expedite healing or allow the therapist to feel how
+            the body is reacting to certain movements, which can further educate the treating
+            therapist on what therapy modalities need to be altered to fit the patient, therefore
+            I consent to such physical interactions with my treating physical therapist.
+            I hereby consent to the procedure(s) which may be perform while I am patient of
+            Campus Orthopedics Physical Therapy Inc. under the instructions of a Physical
+            Therapist. This may include by not limited to: <strong>(1) </strong>Physical Therapy examination,
+            evaluations, physical performance test;<strong>(2) </strong>Applications of modalities such as
+            hot/cold pack, electrical stimulation, whirlpool, diathermy, ultraviolet,
+            iontophoresis, phonophoresis, TENS, contrast bath, ultrasound, etc. <strong>(3) </strong>
+            Applications of therapeutic procedures, such as therapeutic exercises, neuromuscular
+            rehabilitation, kinetic activities, gait training, manual or mechanical traction,
+            massage, myofascial release techniques, soft tissue mobilization, joint mobilization,
+            ADL’s training, work hardening, group exercises, group education, etc.
+        </h6>
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature"
+                        style="border:1px solid black"></canvas><br>
+                <button type="button" id="accept"
+                        class="btn btn-primary">
+                    Accept signature
+                </button>
+                <button type="submit" id="save"
+                        class="btn btn-primary">
+                    Save
+                </button><br>
+            </p>
+        </form>
+        <hr />
+
+    </div>
+    <div class="pagination">
+        <a href="/PaperDocuments/Welcome"> ❮ Previous</a>
+        &nbsp;&nbsp;
+        <a href="/PaperDocuments/PrivacyPractice"> Next ❯</a>
+    </div>
+</article>
+
+<table>
+    <tr>
+        <td>
+            <strong>
+                <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+            </strong>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+

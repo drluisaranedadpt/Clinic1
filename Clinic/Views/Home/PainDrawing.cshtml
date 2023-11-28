@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/Goniometer.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+    @*<link href="~/css/sketch.css" rel="stylesheet" />*@
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <partial name="_Law" />
+    <partial name="_PortalPartial" />
+    <div align="right" class="pagination">
+        <a href="/Home/PastHistory"> ❮ Previous</a>
+        &nbsp;&nbsp;
+        <a href="/Home/SpecialTest"> Next ❯</a>
+    </div>
+    <h5 align="right">Symptoms Drawing</h5>
+    @*<partial name="_PatientHeaderPartial" />*@
+    @*<img src="~/MSKPOSTERIORVIEW.jpg" />
+        <img src="~/MSKANTERIORVIEW.jpg" />
+        <img src="~/Musculoskeletal1.jpg" />*@
+    @*<div class="outsideWrapper">
+            <div class="insideWrapper">
+                <img src="~/Images/30MSK1.jpg" class="coveredImage">
+                <canvas class="coveringCanvas"></canvas>
+            </div>
+        </div>*@
+    <div class="field">
+        <div>
+            <canvas id="canvas">0</canvas>
+        </div>
+        <div class="tools">
+            <div>
+                <div>
+                    <button onClick="undo_last()" type="button" class="button" style="background: red;"> Undo </button>
+                    <button onClick="clear_canvas()" type="button" class="button" style="background: lightblue;"> Clear </button>
+
+                    <div onClick="change_color(this)" class="color-field" style="background: red;">PAIN</div>
+                    <div onClick="change_color(this)" class="color-field" style="background: blue;">NUMBNESS</div>
+                    <div onClick="change_color(this)" class="color-field" style="background: green;">TINGLING</div>
+                    <div onClick="change_color(this)" class="color-field" style="background: yellow;">Y</div>
+
+                    <input onInput="draw_color = this.value" type="color" class="color-picker" />
+                    <input type="range" min="1" max="10" class="pen-range"
+                           onInput="draw_width = this.value" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <partial name="_PainDrawing" />
+
+
+    @*<hr />
+        <img src="~/Images/30MSK1.jpg" />
+        <hr />*@
+    <br>
+
+    <script src="~/js/main.js"></script>
+</body>

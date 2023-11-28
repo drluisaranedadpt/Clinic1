@@ -1,0 +1,638 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+
+
+<partial name="_Law" />
+<partial name="_PortalPartial" />
+<div class="pagination">
+    <a href="/Home/MedicalConsent"> ❮ Previous</a>
+    &nbsp;&nbsp;
+    <a href="/Home/Intake"> Next ❯</a>
+</div>
+<h5 align="right">Liens</h5>
+@*<partial name="_PatientHeaderPartial" />*@
+<article>
+    <header>
+        <h3 align="center">Campus Orthopedics Physical Therapy, Inc.</h3>
+        <h5 align="center">1800 Sullivan Ave Ste 402 Daly City, CA 94015 Tel:650.994.7800  Fax: 650.240.1834</h5>
+        <hr />
+        <h4 align="center">Assignment of Proceeds</h4>
+        <h4 align="center">Liens for Medical/Physical Therapy Services</h4>
+
+
+        <p align="right">Effective date: January 1, 2020</p>
+    </header>
+    <div>
+        <h6>
+            <strong> PART I. Certification, Authorization and Release In Accordance with HIPAA</strong>
+        </h6>
+        <h6>
+
+            Patient and Attorney of Record ["Attorney"] certify that the information provided herein is
+            correct and complete. Patient understands that, in accordance with the Health Information Portability
+            and Privacy Act of 1996 HIPAA, Patient's medical Information relating to this personal injury care may
+            be shared to manage and expedite Patient's medical treatment. Patient authorizes Patient's Physician,
+            Attorney and Campus Orthopedics Physical Therapy Inc. and/or its affiliated group, Campus Physical
+            Therapy Center to secure, release, and disclose such medical treatment information with companies and
+            individuals as deemed necessary, and further agrees that examination, diagnosis, medical treatments,
+            films and reports can be shared with necessary parties involved in Patient's case. Attorney acknowledges
+            that Attorney has obtained a Release of Medical Information from Patient for purpose of communication
+            regarding Patient's Medical information and that Campus Orthopedics Physical Therapy, Inc. is covered
+            by said Release.
+        </h6>
+        <hr />
+        <h6>
+            <strong>PART II: Assignment and/or Lien for Medical Services</strong>
+        </h6>
+        <h6>
+            Patient and Attorney understand that the medical services, supplies, and or treatment Patient is receiving
+            as a part of the ongoing personal injury claim may be billed as a lien may be authorized by applicable state
+            laws and practice. Patient hereby grants to Physical Therapy / Facility a lien of proceeds of any settlement
+            and /or judgement in Patient's pending legal action. Patient acknowledges that Campus Orthopedics Physical
+            Therapy, Inc. has the exclusive right to collect all amounts due for services by Physical Therapist/Facility.
+            Patient does not have the financial resources to pay the charges at this time and the patient does not have
+            insurance coverage to cover such medical services, whereby such insurance coverage would include, but not limited
+            to, health insurance, Worker's Compensation, government or other medical insurance coverage. Patient and Attorney
+            acknowledge that the amount subject to this lien constitutes the ordinary and customary charges of Campus
+            Orthopedics Physical Therapy Inc. and its affiliated for such as medical/ physical therapy services, supplies
+            and/or treatment for similar services to others. Patient and Attorney agrees that this Assignment and/or Lien
+            for Medical Services Agreement supersede any payment schedule agreement that Campus Orthopedics Physical Therapy
+            may or may not have as a In-Network or Out of Network with Health Insurance Companies. Patient and Attorney
+            understands that they are responsible for informing Campus Orthopedics Physical Therapy Inc. of any changes in
+            financial situation as it relates to medical care and coverage. Patient understands that Patient may seek outside
+            independent counsel or any decision regarding the funding or Patient's medical care or for any questions may have
+            relating thereto. This Lien may be signed in parts and have the same force and effect as through executed in one
+            document. A photocopy and/or fax copy of the executed line shall have the same force and effect as the original.
+        </h6>
+        <hr />
+        <h6>
+            <strong>PART III: Patient Information / Attorney Information</strong>
+        </h6>
+        <p><strong></strong>Please complete all information</p>
+        <table width="50%" border="0" cellspacing="0" cellpadding="2">
+            <tr>
+                <td bgcolor="white" colspan="16" class="border1" question_name="two">
+                    <p>
+                        <h6 align="left">Attorney Information</h6>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="1%" class="border3"> <div align="right"></div></td>
+                <td width="15%" class="border3" question_name="one"><div align="left"></div></td>
+
+                <td width="7%" class="border2"><div align="right">Last&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="Last Name" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">First&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">&nbsp;&nbsp;M.I.</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">CA Bar #</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">TIN</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="10%" class="border2"><div align="right">Today</div></td>
+                <td width="10%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="1%" class="border2"></td>
+                <td width="1%" class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2"><div align="right">Street</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">Suite</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">&nbsp;&nbsp;City</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">State</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">Zip</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right"></div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2" align="right">Phone 1</td>
+                <td class="border2" align="left"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Phone 2</td>
+                <td class="border2" align="left"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Fax&nbsp;1</td>
+                <td class="border2" align="left"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Fax&nbsp;2</td>
+                <td class="border2" align="left"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Email</td>
+                <td class="border2" align="left"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Web</td>
+                <td class="border2" align="left"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td bgcolor="white" colspan="16" class="border1" question_name="two">
+                    <p>
+                        <h6 align="left">Patient Information</h6>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="1%" class="border3"> <div align="right"></div></td>
+                <td width="15%" class="border3" question_name="one"><div align="left"></div></td>
+
+                <td width="7%" class="border2"><div align="right">Last&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="Last Name" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">First&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">M.I.</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">CDL#</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">ID#</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="10%" class="border2"><div align="right">DOB</div></td>
+                <td width="10%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="1%" class="border2"></td>
+                <td width="1%" class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2"><div align="right">Street</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">Apt</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">City</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">State</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">Zip</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"><div align="right">Accident</div></td>
+                <td class="border2"><input id="lastName" placeholder="" name="one" size="15" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2" align="right">Phone 1</td>
+                <td class="border2" align="right"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Phone 2</td>
+                <td class="border2" align="right"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Fax&nbsp;1</td>
+                <td class="border2" align="right"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Email</td>
+                <td class="border2" align="right"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Email</td>
+                <td class="border2" align="right"><input name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2" align="right">Today</td>
+                <td class="border2"><input name="one" size="15" type="Date" value="" onClick=doScoreTotal1(this);></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+        </table>
+        <br />
+        <h6>
+            <strong>
+                This assignment and Lien covers the foregoing case and any other legal or administrative action relating to
+                the subject injury or claim.
+            </strong>
+        </h6>
+        <hr />
+        <h6>
+            <strong>PART IV: Payment Agreement:</strong>
+        </h6>
+        <h6>
+            Patient authorizes and direct Attorney to pay Campus Orthopedics Physical Therapy, Inc. as assignee of Campus
+            Physical Therapy Center and/or Physical Therapist/Facility, directly for any billing and fees arising out of
+            the physical therapy services, treatment and care, that have been or may be rendered to Patient by Campus Physical
+            Therapy Center and/or Physical Therapist/Facility as a result of this incident and by reason of any other bills
+            which Patient may owe Campus Physical Therapy Center and/or Physical Therapist/Facility. Patient understands that
+            Patient remains personally responsible for Campus Physical Therapy Center and/or Physical Therapist/Facility billings
+            and that this obligation is not contingent upon Patient's receiving any settlement for Patient's claim.
+        </h6>
+        <h6>
+            Patient will notify Campus Physical Therapy Center and/or Physical Therapist/Facility of any payments received by
+            Patient for medical services from an insurance company or any other source, and Patient will instruct his/her attorney
+            to likewise notify Campus Physical Therapy Center and/or Physical Therapist/Facility. All payment will be forwarded to
+            Campus Orthopedics Physical Therapy Inc. within 30 days of settlement.
+        </h6>
+        <h6>
+            Patient further understands and accepts full financial responsibility for payment of ALL accounts assigned to Campus
+            Physical Therapy Center and/or Physical Therapist/Facility. Patient understands that the legal settlement may pay all,
+            part, or none of Patient's account(s) and the patient is responsible for complete payment of ALL accounts. Patient
+            understands that Patient is financially responsible for any amount unpaid by this assignment of proceeds or lien as
+            may be authorized by State law and practice.
+        </h6>
+        <h6>
+            Patient acknowledges that Campus Orthopedics Physical Therapy Center and/or Physical Therapist/Facility has made no
+            guarantee as to the outcome or results in connection with this Lien. Further, Patient agrees to hold no harm against
+            Campus Orthopedics Physical Therapy Center and/or Physical Therapist and/or Facility.
+        </h6>
+        <h6>
+            By signing this document, Patient full understands all provisions set forth in this Agreement. The undersigned Attorney of
+            Record for the above-named Patient, agrees to observed all terms stated herein and agrees to withhold such sums payable
+            to Campus Orthopedics Physical Therapy Center and/or Physical Therapist/Facility, as assignee of Campus Physical Therapy
+            Center and/or Physical Therapist/Facility, from any settlement judgement or verdict as may be necessary to adequately
+            protect Campus Orthopedics Physical Therapy Center and/or Physical Therapist/Facility.
+        </h6>
+        <h6>
+            Attorney is expressly directed to hold in Attorney's Client Trust Account such sums from any payment, settlements, dispositions,
+            proceeds and/or verdicts received on Patient's behalf as may be required to adequately protect and pay Campus Orthopedics
+            Physical Therapy Inc. for such services by Campus Physical Therapy Center and/or Physical Therapist/Facility. Attorney is
+            further directed to pay from Attorney's Client Trust Account to Campus Orthopedics Physical Therapy Center that amount which
+            is due and owing to Campus Orthopedics Physical Therapy Center, as assignee, for those medical / physical therapy services,
+            examinations, treatments and reports which Campus Orthopedics Physical Therapy Center and/or Physical Therapist/Facility has
+            had prepared on Patient's behalf. Attorney further agrees that in the event Patient secures other counsel in connection with
+            any action instituted by Patient on Account of the injuries fro which patient was treated, Attorney shall inform such new
+            counsel of the Agreement, and secure new counsel's consent thereto. In the event of non-complaints with this agreement, a
+            grievance against the attorney will be filed to the State Bar.
+        </h6>
+        <hr />
+        <h5>
+            <strong>PART V: Verification:</strong>
+        </h5>
+        <h6>
+            Patient authorizes and directs the Attorney to provide complete verifiable documentation about executed settlement agreement[s]
+            of Patient and Attorney with third parties upon request.
+        </h6>
+        <hr />
+        <h5>
+            <strong>PART VI: Signature:</strong>
+        </h5>
+
+        <table width="50%" border="0" cellspacing="0" cellpadding="2">
+            <tr>
+                <td bgcolor="white" colspan="16" class="border1" question_name="two">
+                    <p>
+                        <h6 align="left">Attorney Information</h6>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="1%" class="border3"> <div align="right"></div></td>
+                <td width="15%" class="border3" question_name="one"><div align="left"></div></td>
+
+                <td width="7%" class="border2"><div align="right">Last&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="Last Name" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">First&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">&nbsp;&nbsp;M.I.</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">CA Bar #</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">TIN</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="10%" class="border2"><div align="right">Today</div></td>
+                <td width="10%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="1%" class="border2"></td>
+                <td width="1%" class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td bgcolor="white" colspan="16" class="border1" question_name="two">
+                    <p>
+                        <h6 align="left">Patient Information</h6>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="1%" class="border3"> <div align="right"></div></td>
+                <td width="15%" class="border3" question_name="one"><div align="left"></div></td>
+
+                <td width="7%" class="border2"><div align="right">Last&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="Last Name" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">First&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">M.I.</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">CDL#</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">ID#</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="10%" class="border2"><div align="right">Today</div></td>
+                <td width="10%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="1%" class="border2"></td>
+                <td width="1%" class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+            <tr>
+                <td bgcolor="white" colspan="16" class="border1" question_name="two">
+                    <p>
+                        <h6 align="left">Campus Physical Therapy, Inc.</h6>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="1%" class="border3"> <div align="right"></div></td>
+                <td width="15%" class="border3" question_name="one"><div align="left"></div></td>
+
+                <td width="7%" class="border2"><div align="right">Last&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="Last Name" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">First&nbsp;Name</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">M.I.</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">ID#</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="7%" class="border2"><div align="right">Email</div></td>
+                <td width="7%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="text" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="10%" class="border2"><div align="right">Today</div></td>
+                <td width="10%" class="border2"><input id="lastName" placeholder="" name="one" size="15" type="date" value="" onClick=doScoreTotal1(this);></td>
+
+                <td width="1%" class="border2"></td>
+                <td width="1%" class="border2"></td>
+            </tr>
+            <tr>
+                <td class="border3"><div align="right"></div></td>
+                <td class="border3" question_name="one"><div align="left"></div></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+
+                <td class="border2"></td>
+                <td class="border2"></td>
+            </tr>
+        </table>
+        <hr />
+        <h6>Patient</h6>
+        <form method="POST">
+            <p>
+                <canvas width="1100" height="100" id="sign" style="border:1px solid black"></canvas>
+                <div align="right">
+                    <button type="button" id="accept" class="btn btn-primary">Accept signature</button>
+                    <button type="submit" id="save" class="btn btn-primary">Save</button>
+                </div>
+                <script src="jquery.min.js"></script>
+                <script src="sign.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('#sign').sign({
+                            resetButton: $('#resetSign'),
+                            lineWidth: 5,
+                            width: 900,
+                            height: 140
+                        })
+                    })
+                </script>
+            </p>
+        </form>
+        <h6>Attorney</h6>
+        <form method="POST">
+            <p>
+                <canvas width="1100" height="100" id="sign" style="border:1px solid black"></canvas>
+                <div align="right">
+                    <button type="button" id="accept" class="btn btn-primary">Accept signature</button>
+                    <button type="submit" id="save" class="btn btn-primary">Save</button>
+                    @*<img width="1000" height="100" id="savetarget" style="border:1px solid black">*@
+
+                </div>
+                <script src="jquery.min.js"></script>
+                <script src="sign.js"></script>
+
+                <script>
+                    $(document).ready(function () {
+                        $('#sign').sign({
+                            resetButton: $('#resetSign'),
+                            lineWidth: 5,
+                            width: 900,
+                            height: 140
+                        })
+                    })
+                </script>
+            </p>
+        </form>
+        <h6>Campus Physical Therapy, Inc.</h6>
+        <form method="POST">
+            <p>
+                <canvas width="1100" height="100" id="sign" style="border:1px solid black"></canvas>
+                <div align="right">
+                    <button type="button" id="accept" class="btn btn-primary">Accept signature</button>
+                    <button type="submit" id="save" class="btn btn-primary">Save</button>
+                </div>
+                <script src="jquery.min.js"></script>
+                <script src="sign.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $('#sign').sign({
+                            resetButton: $('#resetSign'),
+                            lineWidth: 5,
+                            width: 900,
+                            height: 140
+                        })
+                    })
+                </script>
+            </p>
+        </form>
+        <hr />
+    </div>
+    <p>Accident Description </p>
+    <br />
+    <table width="100%" border="0" cellspacing="0" cellpadding="2">
+        <tr>
+            <td>
+                <textarea rows="8" placeholder="Accident Description" class="form-control" name="description" id="description"></textarea>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td>
+                <strong>
+                    <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+                </strong>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</article>
+
+@section Scripts {
+    <script src="~/Scripts/signature_pad.min.js"></script>
+    <script src="~/Scripts/SignaturePadInit.js"></script>
+}

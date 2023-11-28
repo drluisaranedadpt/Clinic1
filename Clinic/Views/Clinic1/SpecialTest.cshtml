@@ -1,0 +1,295 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+
+<partial name="_Law" />
+<partial name="_PortalPartial" />
+<div align="right" class="pagination">
+    <a href="/Home/PainDrawing"> ❮ Previous</a>
+    &nbsp;&nbsp;
+    <a href="/Home/Goals"> Next ❯</a>
+</div>
+<h5 align="right">Special Test</h5>
+@*<partial name="_PatientHeaderPartial" />*@
+<partial name="_InstructionsPortalPartial" />
+<br />
+<hr />
+<table width="100%" border="0" cellspacing="0" cellpadding="2">
+    <tr>
+        <td colspan="24" class="border1" question_name="two">
+            <p>
+                Have you had any of these tests? If yes, please provide a written/digital [pdf] copy of the report.
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td width="2%"> <div align="right">1.</div></td>
+        <td width="15%" question_name="one"><div align="left">X-Rays</div></td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Normal</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Bone Fracture</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Dislocated Joint</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Osteoporosis</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Arthritis</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Infection</td>
+
+        <td width="2%" class="border2"></td>
+    </tr>
+    <tr>
+        <td width="2%" class="border3"> <div align="right"></div></td>
+        <td width="15%" class="border3" question_name="one"><div align="left"></div></td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Cancer/tumor</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Enlarged Heart</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Blood Cloth</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Fluid</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Foreign Object</td>
+
+        <td width="2%" class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td width="12%" class="border2">Metal fragments</td>
+
+        <td width="2%" class="border2"></td>
+    </tr>
+    <tr>
+        <td> <div align="right">2.</div></td>
+        <td question_name="one"><div align="left">MRI</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Normal</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Bone Infection</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Cancer</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Damage Joint</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Disc</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Nerve Irritation</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right"></div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">ArterioVenous Malform..</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Brain tumors</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Stroke</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Dementia</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right"></div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">herniated discs</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">pinched nerves</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Spinal tumors</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Spinal cord compression</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">fractures</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td> <div align="right">3.</div></td>
+        <td question_name="one"><div align="left">CT Scan</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Normal</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Bone/joint problems</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Cancer</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Heart disease</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Emphysema</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Liver masses</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right"></div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Normal</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">tumor</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">blood clot</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">excess fluid</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">infection</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">P</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td> <div align="right">4.</div></td>
+        <td question_name="one"><div align="left">Ultrasound</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Normal</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">joint inflammation (synovitis)</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">metabolic bone disease</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">gallbladder disease</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">pregnancy[female only]</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">thyroid gland</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right"></div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Normal</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">genital and prostate problems</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">breast lump</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">biopsy or tumor treatment</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">liver disease</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">pancreas disease</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td> <div align="right">5.</div></td>
+        <td question_name="one"><div align="left">Blood Test</div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Normal</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Complete Blood Count</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Comprehensive Metabolic Panel (CMP)</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Blood enzyme tests</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Blood tests to check for heart disease</td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2">Blood clotting tests</td>
+
+        <td class="border2"></td>
+    </tr>
+    <tr>
+        <td class="border3"> <div align="right"></div></td>
+        <td class="border3" question_name="one"><div align="left"></div></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"><input name="one" type="radio" value="1" onClick=doScoreTotal1(this);></td>
+        <td class="border2"></td>
+
+        <td class="border2"></td>
+    </tr>
+</table>

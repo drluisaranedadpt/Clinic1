@@ -1,0 +1,166 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<partial name="_Law" />
+
+
+@*{"web":{"client_id":"302811509356-udglp1tda5jjhrv7v8hmd5a39bm2tjks.apps.googleusercontent.com","project_id":"patientportal-319305","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"oHsXSHjSt-6tgm0Jf1cmQErz","redirect_uris":["https://localhost:5001/signin-google"],"javascript_origins":["https://localhost:5001"]}}
+
+
+    302811509356-udglp1tda5jjhrv7v8hmd5a39bm2tjks.apps.googleusercontent.com
+    oHsXSHjSt-6tgm0Jf1cmQErz
+
+    682607435560-4roeaem035k850cla4695jdbgk51k57c.apps.googleusercontent.com
+    fkKv0RJO4OQykB2mRBXYWZX7*@
+
+@*Authorized JavaScrip Origins
+    URIs Https://localhost:5001*@
+
+Redirect URIs
+@*https://localhost:5001/
+    https://localhost:5001/signin-google
+    https://localhost:5001/clinic*@
+
+@*Clinic Google Cloud Platform
+    Client ID 685305085631-qgapbclaf50kmtg2n7m2qq021oree08q.apps.googleusercontent.com
+    Client Secret tB_4DZ9siTY4fJCNx_SV8Wst
+    July 18, 2021 at 9:37:09 PM GMT-7
+*@
+
+@*services.AddAuthentication()
+    .AddGoogle(options =>
+    {
+        IConfigurationSection googleAuthNsection =
+        Configuration.GetSection("Authentication:Google");
+
+        options.ClientId = googleAuthNsection["ClientId"];
+        options.ClientSecret = googleAuthNsection["ClientSecret"];
+    });*@
+
+
+@*Two factor authentication in Asp.Net Core using Google or Microsoft authenticator without SMS
+    https://www.youtube.com/watch?v=AUopD2VzWI4*@
+
+@*Installing Dapper and Setting up Database
+    https://www.youtube.com/watch?v=4KdmK85TsHk*@
+
+
+@*Creating Repository using Dapper
+    https://www.youtube.com/watch?v=PIVkzH5sUsQ*@
+
+
+@*https://zoomadmin.com/*@
+
+@*https://filezilla-project.org/download.php?platform=win64*@
+
+
+
+@*How to Deploy ASP.NET Core 5 on LINUX | The Easy Way
+    https://www.youtube.com/watch?v=cvOjkQtK3qU*@
+
+
+
+@*How to quickly install MySQL Server using ZoomAdmin Server Control Panel
+    https://www.youtube.com/watch?v=PjKRuXcygCE*@
+
+
+@*Estimación de Postura 🚶 | Python - MediaPipe - OpenCV
+    https://github.com/google/mediapipe/blob/master/mediapipe/python/solutions/pose.py*@
+
+@*CANVAS JavaScript Drawing App
+    https://www.youtube.com/watch?v=wCwKkT1P7vY&t=61s*@
+
+
+
+@*Como instalar Python y OpenCV en Windows
+    https://www.youtube.com/watch?v=3_dexsbCwlk*@
+
+
+@*https://github.com/google/mediapipe/blob/master/mediapipe/python/solutions/pose.py*@
+
+@*LEARN OPENCV in 3 HOURS with Python | Including 3xProjects | Computer Vision
+    https://www.youtube.com/watch?v=WQeoO7MI0Bs  Chapter4*@
+
+@*OpenCV Python for Beginners - Full Course in 10 Hours - Learn Computer Vision with OpenCV
+    https://www.youtube.com/watch?v=N81PCpADwKQ*@
+
+
+@*https://zoomadmin.com/tutorials
+    https://zoomadmin.com/tutorials*@
+
+
+@*Mediapipe*@
+
+
+
+@*https://github.com/opencv/opencv*@
+
+
+python
+https://www.youtube.com/watch?v=bZ6NL59FMoc&list=PLS1QulWo1RIYEMepIBinxplXsx9v0zCSf&index=3
+
+
+
+@*🖊️ Marcador o Lápiz virtual | OpenCV - Python
+    https://www.youtube.com/watch?v=KlVSqdF0EWs*@
+
+
+@*Canvas and Node Authentication with Passport JS, newsletter signup
+    https://www.youtube.com/channel/UC9Yp2yz6-pwhQuPlIDV_mjA*@
+
+
+
+https://p5js.org/libraries/
+
+
+http://www.concretejs.com/
+
+
+
+<hr />
+<form method="POST">
+    <p>
+        <canvas width="500" height="200" id="signature"
+                style="border:1px solid black"></canvas><br>
+        <button type="button" id="accept"
+                class="btn btn-primary">
+            Accept signature
+        </button>
+        <button type="submit" id="save"
+                class="btn btn-primary">
+            Save
+        </button><br>
+    </p>
+</form>
+<hr />
+
+
+
+<td>
+
+    <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+
+</td>
+<td>
+
+    <input name="Print" type="button" class="btn btn-success" onClick="window.print();return false" value="Print page">
+
+</td>
+<button type="button" class="btn btn-default">Default</button>
+
+<canvas id="myCanvas"></canvas>
+<input type="button" value="Reset" id='resetSign'>
+
+$(document).ready(function() {
+    $('#myCanvas').sign({
+        resetButton: $('#resetSign'), // Reset input * optional
+        lineWidth: 5, // * Optional
+        width: 300, // * optional. Default: 500
+        height: 250, // * optional. Default: 300
+    });
+});
+
+<script src="jquery.min.js"></script>

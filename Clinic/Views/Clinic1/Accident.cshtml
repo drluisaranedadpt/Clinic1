@@ -1,0 +1,100 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<partial name="_Law" />
+<partial name="_PortalPartial" />
+<h5 align="right">Liens</h5>
+<article>
+    <header>
+        <h3 align="center">Campus Orthopedics Physical Therapy, Inc.</h3>
+        <h5 align="center">MOTOR VEHICLE ACCIDENT AND THIRD PARTY LIABILITY CLAIMS OFFICE POLICIES </h5>
+
+
+        <p align="right">Effective date: August 1, 2020</p>
+    </header>
+    <div>
+        <h6>
+            <strong>Campus Orthopedics Physical Therapy Inc.</strong>believes that part of good health care practice is to establish and communicate our office
+            financial policy to our patients. We are dedicated to providing the best possible care for you, and we want you to have a
+            full understanding of our policies.
+        </h6>
+        <p>
+            If the accident is deemed as your fault, <strong>your Motor Vehicle Insurance Company</strong> will pay for Physical Therapy up to a certain amount. The exact policy you
+            have will determine what this limit is. Please file a claim with your motor vehicle insurance company [AAA, Geico, StateFarm, etc.]. If you have
+            <strong>no medical coverage,</strong> your Motor Vehicle Insurance simply will not pay for our services. The Certificate of Insurance will indicate your policy limits.
+            The Certificate of Insurance or ACORD is provided to you when you purchased your insurance. If you don't have one, please contact your insurance to obtain a copy of this document.
+        </p>
+        <p>
+            If the other person is at fault, then their insurance will cover your physical therapy expenses. Oftentimes, there is a medical expense limit in place. However,
+            third party insurance does not pay directly to Campus Orthopedics Physical Therapy, Inc. Rather, that Insurance Company settle at later time with you for
+            a lump sum amount. This may occur within two years after your accident. Since personal injury cases are not always successful, not every doctor, chiropractor, and
+            therapist is willing to work on a medical “lien basis” in California.
+        </p>
+        <p>
+            <strong> Please be aware of our Financial Policy if your injuries are a result of a Motor Vehicle Accident or any other accident.</strong>.
+            Please note that Campus Physical Therapy <strong> do not accept </strong> patients seeking services for a Motor Vehicle Accident or
+            any other Third Party Liability Accident and request billing such services through: <strong> [A] </strong> Personal Health Insurance such as Blue Shield of California, Blue Cross, KP, HMO.
+            Health insurance companies have limitations when it comes to covering treatment for injuries caused by motor vehicle accidents. <strong> [B] </strong> Medi-Cal.
+            <strong> and [C] </strong> Third Party Liability.
+        </p>
+        <p>
+            <strong>Payment: </strong> If you wish to receive services at Campus Orthopedics Physical Therapy, Inc. an initial visit charge of $250 dollar
+            [which include Assessment and Treatment] and each subsequent visit [Treatment] is billed at $170.00 due at the time of visit. We accepts cash, check
+            and credit cards payments. You must present our paid bill to your Motor Vehicle Insurance or the third party insurance for your reimbursement.
+        </p>
+        <p>
+            I have read and understand the practice’s financial policies in the case of a Motor Vehicle Accident.  and I agree to be bound by its terms.
+            I also understand and agree that such terms may be amended by the practice at any time for any reason.
+        </p>
+        <br />
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature"
+                        style="border:1px solid black"></canvas><br>
+                <button type="button" id="accept"
+                        class="btn btn-primary">
+                    Accept signature
+                </button>
+                <button type="submit" id="save"
+                        class="btn btn-primary">
+                    Save
+                </button><br>
+            </p>
+        </form>
+        <hr />
+        <hr />
+
+        _____________________________________________________________________________________________________________
+        Signature of Patient/Guarantor (if applicable)                         Date
+        <br />
+        <br />
+        <hr />
+        <p>
+            Disclaimer: Campus Orthopedics Physical Therapy does not consider an individual seeking treatment to be a patient until a preliminary
+            assessment is completed and <strong>the individual has been notified that he or she has been accepted as a patient</strong>; simply making
+            an appointment does not automatically initiate doctor-patient relationship. We have the right to refuse services to anyone for any reason.
+        </p>
+        <p>
+            Signature pad
+        </p>
+        <table>
+            <tr>
+                <td>
+                    <strong>
+                        <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print page">
+                    </strong>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</article>

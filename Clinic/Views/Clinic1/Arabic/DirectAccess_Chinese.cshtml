@@ -1,0 +1,120 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link rel="stylesheet" href="~/css/site.css" />
+<link href="~/css/Goniometer.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="jquery.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/3750a469fe.js" crossorigin="anonymous"></script>
+<h3 align="center">Campus Physical Therapy Practice Manager </h3>
+<h5 style="color:royalblue" align="center">The Following Information is protected by California and US Federal Laws</h5>
+<hr />
+<partial name="_PortalPartial" />
+<h5 color="grey" align="right">Direct Access to Physical Therapy Services</h5>
+<partial name="_PatientHeaderPartial" />
+<h5 align="right">
+    直接获得物理治疗服务
+    Zhíjiē huòdé wùlǐ zhìliáo fúwù
+</h5>
+<article>
+    <h6 align="right">
+        Effective date: January 1, 2020
+    </h6>
+
+    <div>
+        <br />
+
+        <h6>
+            You are receiving direct physical therapy treatment services from an individual
+            who is a physical therapist licensed by the Physical Therapy Board of California.
+        </h6>
+        <h6>
+            您正在接受个人的直接物理治疗服务 他是加州物理治疗委员会许可的物理治疗师。
+        </h6>
+        <h6>
+            Nín zhèngzài jiēshòu gèrén de zhíjiē wùlǐ zhìliáo fúwù tā shì jiāzhōu wùlǐ zhìliáo wěiyuánhuì xǔkě de wùlǐ zhìliáo shī.
+        </h6>
+        <h6>
+            Under California law, you may continue to receive direct physical therapy
+            treatment services for a period of up to 45 calendar days or 12 visits, whichever
+            occurs first,m after which time a physical therapist may continue providing you with
+            physical therapy treatment services only after receiving, from a person holding a
+            physicain and surgeon's certificate issued by the Medical Board of California or by
+            the Osteopathic Medical Board of California, or from a person holding a certificate
+            to practice podiatric medicine from the California Board of Podiatric Medicine and
+            acting within hir or her scope of practice, a dated signature on the physical
+            therapist's plan of care indicating approval of the physical therapist's plan of care
+            and that an in-person patient examination and evaluation was conducted by the
+            physician and surgeon or podiatrist.
+        </h6>
+        <br />
+        <h6>
+            根据加州法律，您可以继续接受直接物理治疗
+            最多 45 个日历日或 12 次就诊的治疗服务，视何者为准
+            首先发生，然后物理治疗师可能会继续为您提供
+            物理治疗治疗服务仅在接受后，从持有的人
+            由加利福尼亚医学委员会或由加利福尼亚州医学委员会颁发的医师和外科医生证书
+            加州整骨医学委员会，或持有证书的人
+            从加州足病医学委员会实践足病医学和
+            在他或她的执业范围内行事，在身体上注明日期的签名
+            治疗师的护理计划表明批准物理治疗师的护理计划
+            并且亲自进行了患者检查和评估
+            内科医生和外科医生或足病医生。
+        </h6>
+        <h6>
+            Gēnjù jiāzhōu fǎlǜ, nín kěyǐ jìxù jiēshòu zhíjiē wùlǐ zhìliáo
+            zuìduō 45 gè rìlì rì huò 12 cì jiùzhěn de zhìliáo fúwù, shì hézhě wéi zhǔn
+            shǒuxiān fāshēng, ránhòu wùlǐ zhìliáo shī kěnéng huì jìxù wèi nín tígōng
+            wùlǐ zhìliáo zhìliáo fúwù jǐn zài jiēshòu hòu, cóng chí yǒu de rén
+            yóu jiālìfúníyǎ yīxué wěiyuánhuì huò yóu jiālìfúníyǎ zhōu yīxué wěiyuánhuì bānfā de yīshī hé wàikē yīshēng zhèngshū
+            jiāzhōu zhěnggǔ yīxué wěiyuánhuì, huò chí yǒu zhèngshū de rén
+            cóng jiāzhōu zú bìng yīxué wěiyuánhuì shíjiàn zú bìng yīxué hé
+            zài tā huò tā de zhíyè fànwéi nèi háng shì, zài shēntǐ shàng zhù míng rìqí de qiānmíng
+            zhìliáo shī de hùlǐ jìhuà biǎomíng pīzhǔn wùlǐ zhìliáo shī de hùlǐ jìhuà
+            bìngqiě qīnzì jìnxíngle huànzhě jiǎnchá hé pínggū
+            nèikē yīshēng hé wàikē yīshēng huò zú bìng yīshēng.
+        </h6>
+        <br />
+        <hr />
+        <form method="POST">
+            <p>
+                <canvas width="500" height="200" id="signature" style="border:1px solid black"></canvas>
+                <br>
+                <button type="button" id="accept" class="btn btn-primary">
+                    Accept signature
+                    接受签名
+                    Jiēshòu qiānmíng
+                </button>
+                <button type="submit" id="save" class="btn btn-primary">
+                    Save
+                    保存
+                    Bǎocún
+                </button>
+                <br>
+            </p>
+        </form>
+        <hr />
+
+        _____________________________________________________________________________________________________________
+        Patient's Signature /Guarantor (if applicable)                         Date
+
+        患者签名/担保人（如适用）
+        Huànzhě qiānmíng/dānbǎo rén (rú shìyòng)                         日期
+        Rìqí
+        <br />
+        <hr />
+        <p>
+            <table>
+                <tr>
+                    <td>
+                        <strong>
+                            <input name="Print" type="button" class="shape" onClick="window.print();return false" value="Print Page
+                                   打印页面 Dǎyìn yèmiàn">
+                        </strong>
+                    </td>
+                </tr>
+            </table>
+    </div>
+</article>
